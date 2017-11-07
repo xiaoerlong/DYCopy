@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="85" id="KGk-i7-Jjw" customClass="DYCategoryTableViewCell" customModule="斗鱼TV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxx-6Y-Zo9">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="84.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="排行榜" image="homeNewItem_rankingList">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4O8-PR-hxA">
+                        <rect key="frame" x="80" y="0.0" width="80" height="84.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="消息" image="homeNewItem_msg">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUa-gB-jts">
+                        <rect key="frame" x="160" y="0.0" width="80" height="84.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="活动" image="homeNewItem_Activity">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9Y-cT-b2q">
+                        <rect key="frame" x="240" y="0.0" width="80" height="84.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="全部直播" image="homeNewItem_allLive">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TUa-gB-jts" firstAttribute="leading" secondItem="4O8-PR-hxA" secondAttribute="trailing" id="0eg-A4-YkP"/>
+                    <constraint firstItem="q9Y-cT-b2q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2PS-K8-4ge"/>
+                    <constraint firstAttribute="bottom" secondItem="4O8-PR-hxA" secondAttribute="bottom" id="4L5-pu-zDV"/>
+                    <constraint firstAttribute="bottom" secondItem="Qxx-6Y-Zo9" secondAttribute="bottom" id="7CP-p1-Dfl"/>
+                    <constraint firstItem="4O8-PR-hxA" firstAttribute="leading" secondItem="Qxx-6Y-Zo9" secondAttribute="trailing" id="97N-by-L7o"/>
+                    <constraint firstItem="Qxx-6Y-Zo9" firstAttribute="width" secondItem="q9Y-cT-b2q" secondAttribute="width" id="G1U-E8-pAL"/>
+                    <constraint firstItem="Qxx-6Y-Zo9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="P1C-hF-FLy"/>
+                    <constraint firstItem="Qxx-6Y-Zo9" firstAttribute="width" secondItem="4O8-PR-hxA" secondAttribute="width" id="PTc-w5-2TJ"/>
+                    <constraint firstItem="Qxx-6Y-Zo9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Q9K-Ce-sgJ"/>
+                    <constraint firstItem="TUa-gB-jts" firstAttribute="leading" secondItem="4O8-PR-hxA" secondAttribute="trailing" id="cDF-Y0-NQo"/>
+                    <constraint firstAttribute="trailing" secondItem="q9Y-cT-b2q" secondAttribute="trailing" id="dPE-yx-ggP"/>
+                    <constraint firstAttribute="bottom" secondItem="q9Y-cT-b2q" secondAttribute="bottom" id="h4r-4q-G7a"/>
+                    <constraint firstItem="TUa-gB-jts" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iZ6-jt-gPb"/>
+                    <constraint firstItem="Qxx-6Y-Zo9" firstAttribute="width" secondItem="TUa-gB-jts" secondAttribute="width" id="q94-Jy-HVf"/>
+                    <constraint firstItem="4O8-PR-hxA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qau-fk-dah"/>
+                    <constraint firstItem="q9Y-cT-b2q" firstAttribute="leading" secondItem="TUa-gB-jts" secondAttribute="trailing" id="t9C-5J-3Eg"/>
+                    <constraint firstAttribute="bottom" secondItem="TUa-gB-jts" secondAttribute="bottom" id="tdY-Fx-mMI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityButton" destination="TUa-gB-jts" id="wGj-q7-8ee"/>
+                <outlet property="livingButton" destination="q9Y-cT-b2q" id="e3E-wY-8n2"/>
+                <outlet property="messageButton" destination="4O8-PR-hxA" id="2zz-XH-w8h"/>
+                <outlet property="rankButton" destination="Qxx-6Y-Zo9" id="rxd-XE-dPl"/>
+            </connections>
+            <point key="canvasLocation" x="57" y="79.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homeNewItem_Activity" width="27" height="27"/>
+        <image name="homeNewItem_allLive" width="30" height="30"/>
+        <image name="homeNewItem_msg" width="30" height="30"/>
+        <image name="homeNewItem_rankingList" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DYRecommendCategoryView" customModule="斗鱼TV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKo-0T-Oyn">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="99"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="排行榜" image="homeNewItem_rankingList">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhq-Eu-hSF">
+                    <rect key="frame" x="188" y="0.0" width="93.5" height="99"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="活动" image="homeNewItem_Activity">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mii-Cl-sc6">
+                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="99"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="全部直播" image="homeNewItem_allLive">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmF-7a-PdL">
+                    <rect key="frame" x="94" y="0.0" width="94" height="99"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="消息" image="homeNewItem_msg">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tKo-0T-Oyn" secondAttribute="bottom" id="0LB-2l-85H"/>
+                <constraint firstItem="fmF-7a-PdL" firstAttribute="width" secondItem="nhq-Eu-hSF" secondAttribute="width" id="3Sv-u5-cjN"/>
+                <constraint firstItem="tKo-0T-Oyn" firstAttribute="width" secondItem="fmF-7a-PdL" secondAttribute="width" id="G1E-9R-Fd3"/>
+                <constraint firstAttribute="bottom" secondItem="nhq-Eu-hSF" secondAttribute="bottom" id="GDF-iV-1c2"/>
+                <constraint firstAttribute="bottom" secondItem="Mii-Cl-sc6" secondAttribute="bottom" id="I9e-2o-6Gd"/>
+                <constraint firstAttribute="trailing" secondItem="Mii-Cl-sc6" secondAttribute="trailing" id="J1K-7L-pMI"/>
+                <constraint firstItem="tKo-0T-Oyn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KnD-JO-syR"/>
+                <constraint firstItem="Mii-Cl-sc6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lh7-ai-XxJ"/>
+                <constraint firstItem="fmF-7a-PdL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="S0L-xP-mrw"/>
+                <constraint firstItem="nhq-Eu-hSF" firstAttribute="leading" secondItem="fmF-7a-PdL" secondAttribute="trailing" id="S6j-u1-ijy"/>
+                <constraint firstItem="nhq-Eu-hSF" firstAttribute="width" secondItem="Mii-Cl-sc6" secondAttribute="width" id="Wvs-sh-S7Q"/>
+                <constraint firstItem="fmF-7a-PdL" firstAttribute="leading" secondItem="tKo-0T-Oyn" secondAttribute="trailing" id="XNw-AL-ODa"/>
+                <constraint firstAttribute="bottom" secondItem="fmF-7a-PdL" secondAttribute="bottom" id="YOg-0O-lWJ"/>
+                <constraint firstItem="nhq-Eu-hSF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hYY-so-H5e"/>
+                <constraint firstItem="Mii-Cl-sc6" firstAttribute="leading" secondItem="nhq-Eu-hSF" secondAttribute="trailing" id="kXe-1p-inE"/>
+                <constraint firstItem="tKo-0T-Oyn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ydB-55-nd9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityButton" destination="nhq-Eu-hSF" id="fs6-If-whK"/>
+                <outlet property="livingButton" destination="Mii-Cl-sc6" id="zs5-0s-Yvh"/>
+                <outlet property="messageButton" destination="fmF-7a-PdL" id="rFs-Va-NIV"/>
+                <outlet property="rankButton" destination="tKo-0T-Oyn" id="vEo-nN-BHQ"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="-202.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="homeNewItem_Activity" width="27" height="27"/>
+        <image name="homeNewItem_allLive" width="30" height="30"/>
+        <image name="homeNewItem_msg" width="30" height="30"/>
+        <image name="homeNewItem_rankingList" width="30" height="30"/>
+    </resources>
+</document>
