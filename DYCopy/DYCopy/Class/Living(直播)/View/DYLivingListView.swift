@@ -16,7 +16,11 @@ private let normalIdentifier = "NormalCollectionCell"
 
 class DYLivingListView: UIView {
     
+<<<<<<< HEAD
     var dataArray: [DYLivingDataModel]?
+=======
+    var dataArray = [DYLivingDataModel]()
+>>>>>>> origin/master
 
     //MARK: lzay init
     lazy var collectionView: UICollectionView = {
@@ -38,7 +42,11 @@ class DYLivingListView: UIView {
         super.init(frame: CGRect.zero)
     }
     
+<<<<<<< HEAD
     init(frame: CGRect, dataArray: [DYLivingDataModel]?) {
+=======
+    init(frame: CGRect, dataArray: [DYLivingDataModel]) {
+>>>>>>> origin/master
         super.init(frame: frame)
         self.addSubview(collectionView)
         self.dataArray = dataArray
@@ -56,17 +64,25 @@ extension DYLivingListView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+<<<<<<< HEAD
         if let dataArray = dataArray {
             return dataArray.count
         }
         return 0
+=======
+        return dataArray.count
+>>>>>>> origin/master
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: normalIdentifier, for: indexPath) as! DYNormalCollectionViewCell
+<<<<<<< HEAD
         if let dataArray = dataArray {
             cell.configureInfo(model: dataArray[indexPath.row])
         }
+=======
+        cell.configureInfo(model: dataArray[indexPath.row])
+>>>>>>> origin/master
         return cell
     }
 }
@@ -78,7 +94,11 @@ extension DYLivingListView: UICollectionViewDelegate, UICollectionViewDelegateFl
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let playVC = DYPlayViewController()
+<<<<<<< HEAD
         let model = dataArray![indexPath.row]
+=======
+        let model = dataArray[indexPath.row]
+>>>>>>> origin/master
         playVC.jumpURLString =  model.jumpUrl
 //        self.navigationController?.pushViewController(playVC, animated: true)
     }
@@ -87,4 +107,7 @@ extension DYLivingListView: UICollectionViewDelegate, UICollectionViewDelegateFl
         return UIEdgeInsets.init(top: 5, left: kItemMargin, bottom: 5, right: kItemMargin)
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master

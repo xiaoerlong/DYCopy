@@ -9,5 +9,8 @@ pod 'Alamofire', '~> 4.0'
 pod 'SwiftyJSON'
 pod 'ObjectMapper', '~> 2.2'
 pod 'Kingfisher', '~> 3.0'
+<<<<<<< HEAD
 pod 'ESPullToRefresh'
+=======
+>>>>>>> origin/master
 end
