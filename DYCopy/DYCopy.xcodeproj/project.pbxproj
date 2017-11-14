@@ -987,11 +987,9 @@
 				INFOPLIST_FILE = DYCopy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-<<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = xel.DYCopy1;
-=======
+
 				PRODUCT_BUNDLE_IDENTIFIER = xel.DYCopy;
->>>>>>> origin/master
+
 				PRODUCT_NAME = "斗鱼TV";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/DYCopy/Global/DYCopy-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -1012,11 +1010,9 @@
 				INFOPLIST_FILE = DYCopy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-<<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = xel.DYCopy1;
-=======
+
 				PRODUCT_BUNDLE_IDENTIFIER = xel.DYCopy;
->>>>>>> origin/master
+
 				PRODUCT_NAME = "斗鱼TV";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/DYCopy/Global/DYCopy-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
