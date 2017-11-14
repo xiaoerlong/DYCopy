@@ -16,7 +16,8 @@ private let normalIdentifier = "NormalCollectionCell"
 
 class DYLivingListView: UIView {
     
-    var dataArray: [DYLivingDataModel]?
+    public var dataArray: [DYLivingDataModel]?
+    public var viewController: UIViewController?
 
 
     //MARK: lzay init
@@ -83,11 +84,9 @@ extension DYLivingListView: UICollectionViewDelegate, UICollectionViewDelegateFl
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let playVC = DYPlayViewController()
-
         let model = dataArray![indexPath.row]
-
         playVC.jumpURLString =  model.jumpUrl
-//        self.navigationController?.pushViewController(playVC, animated: true)
+        viewController?.navigationController?.pushViewController(playVC, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

@@ -47,6 +47,7 @@ extension DYLivingGameViewController {
 
         DYBaseNetworkTool.getColumnRoom(cate_id: cate_id, limit: 20, offset: 0) { (data) in
             self.livingListView = DYLivingListView.init(frame: CGRect.init(x: 0, y: self.pullView.height, width: self.view.frame.width, height: self.view.frame.height - self.pullView.height), dataArray: data.data!)
+            self.livingListView.viewController = self
             self.view.addSubview(self.livingListView)
         }
 

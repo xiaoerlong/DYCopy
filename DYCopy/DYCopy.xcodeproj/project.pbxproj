@@ -16,11 +16,11 @@
 		0C1E3BE91E99EEAC00553295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E3BE71E99EEAC00553295 /* Main.storyboard */; };
 		0C1E3BEB1E99EEAC00553295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E3BEA1E99EEAC00553295 /* Assets.xcassets */; };
 		0C1E3BEE1E99EEAC00553295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E3BEC1E99EEAC00553295 /* LaunchScreen.storyboard */; };
+		0C4BE0B31FBB3D9F00C4A2B6 /* DYLivingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BE0B01FBB3D9F00C4A2B6 /* DYLivingDataModel.swift */; };
+		0C4BE0B41FBB3D9F00C4A2B6 /* DYLivingSubChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BE0B11FBB3D9F00C4A2B6 /* DYLivingSubChannelModel.swift */; };
+		0C4BE0B51FBB3D9F00C4A2B6 /* DYLivingChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BE0B21FBB3D9F00C4A2B6 /* DYLivingChannelModel.swift */; };
 		0C72207A1F930070006582AD /* DYBaseNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7220791F930070006582AD /* DYBaseNetworkTool.swift */; };
 		0C72207D1F93037A006582AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72207C1F93037A006582AD /* AppDelegate.swift */; };
-		0C72212E1F9506C4006582AD /* DYLivingChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72212D1F9506C4006582AD /* DYLivingChannelModel.swift */; };
-		0C7221301F9506F2006582AD /* DYLivingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72212F1F9506F2006582AD /* DYLivingDataModel.swift */; };
-		0C7221321F950723006582AD /* DYLivingSubChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7221311F950723006582AD /* DYLivingSubChannelModel.swift */; };
 		0C7221351F979DF8006582AD /* DYLivingGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7221331F979DF8006582AD /* DYLivingGameViewController.swift */; };
 		0C7221381F979F6A006582AD /* Living.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7221371F979F6A006582AD /* Living.xcassets */; };
 		0CA52FD81F404F3300CF05B3 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA52FD71F404F3300CF05B3 /* Mine.storyboard */; };
@@ -95,11 +95,11 @@
 		0C1E3BE81E99EEAC00553295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C1E3BEA1E99EEAC00553295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C1E3BED1E99EEAC00553295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C4BE0B01FBB3D9F00C4A2B6 /* DYLivingDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYLivingDataModel.swift; sourceTree = "<group>"; };
+		0C4BE0B11FBB3D9F00C4A2B6 /* DYLivingSubChannelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYLivingSubChannelModel.swift; sourceTree = "<group>"; };
+		0C4BE0B21FBB3D9F00C4A2B6 /* DYLivingChannelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYLivingChannelModel.swift; sourceTree = "<group>"; };
 		0C7220791F930070006582AD /* DYBaseNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYBaseNetworkTool.swift; sourceTree = "<group>"; };
 		0C72207C1F93037A006582AD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C72212D1F9506C4006582AD /* DYLivingChannelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DYLivingChannelModel.swift; path = "DYCopy/Class/Living(直播)/Model/DYLivingChannelModel.swift"; sourceTree = SOURCE_ROOT; };
-		0C72212F1F9506F2006582AD /* DYLivingDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DYLivingDataModel.swift; path = "DYCopy/Class/Living(直播)/Model/DYLivingDataModel.swift"; sourceTree = SOURCE_ROOT; };
-		0C7221311F950723006582AD /* DYLivingSubChannelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DYLivingSubChannelModel.swift; path = "DYCopy/Class/Living(直播)/Model/DYLivingSubChannelModel.swift"; sourceTree = SOURCE_ROOT; };
 		0C7221331F979DF8006582AD /* DYLivingGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYLivingGameViewController.swift; sourceTree = "<group>"; };
 		0C7221371F979F6A006582AD /* Living.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Living.xcassets; sourceTree = "<group>"; };
 		0CA52FD71F404F3300CF05B3 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
@@ -235,6 +235,23 @@
 			path = DYCopy;
 			sourceTree = "<group>";
 		};
+		0C4BE0A91FBB3D7B00C4A2B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C4BE0B21FBB3D9F00C4A2B6 /* DYLivingChannelModel.swift */,
+				0C4BE0B01FBB3D9F00C4A2B6 /* DYLivingDataModel.swift */,
+				0C4BE0B11FBB3D9F00C4A2B6 /* DYLivingSubChannelModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C4BE0B61FBB3DC000C4A2B6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		0C7220781F92FC54006582AD /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,17 +266,6 @@
 				0C72207C1F93037A006582AD /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		0C72208E1F9504E2006582AD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0C72212F1F9506F2006582AD /* DYLivingDataModel.swift */,
-				0C72212D1F9506C4006582AD /* DYLivingChannelModel.swift */,
-				0C7221311F950723006582AD /* DYLivingSubChannelModel.swift */,
-			);
-			name = Model;
-			path = Model/Model/Model;
 			sourceTree = "<group>";
 		};
 		0CCB7F121FAA0AF30058EAA7 /* Extension */ = {
@@ -283,6 +289,7 @@
 		3A4BEDD11F39CD9100828B6A /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				0C4BE0B61FBB3DC000C4A2B6 /* Base */,
 				3A4BEDD21F39CD9100828B6A /* Common */,
 				3A4BEDE71F39CD9100828B6A /* Home(首页) */,
 				3A4BEE071F39CD9100828B6A /* Living(直播) */,
@@ -479,7 +486,7 @@
 		3A4BEE071F39CD9100828B6A /* Living(直播) */ = {
 			isa = PBXGroup;
 			children = (
-				0C72208E1F9504E2006582AD /* Model */,
+				0C4BE0A91FBB3D7B00C4A2B6 /* Model */,
 				3A4BEE081F39CD9100828B6A /* Controller */,
 				0C1B4E861F9E3829005FFAFD /* View */,
 				3A4BEE0D1F39CD9100828B6A /* Other */,
@@ -831,8 +838,8 @@
 				0C1C7BE61F492EE000744401 /* DYHistoryViewController.swift in Sources */,
 				3A5AF8B81F4533B900C87770 /* HPDesignableButton.m in Sources */,
 				3A4BEE621F39CD9100828B6A /* DYBaseTabBarViewController.swift in Sources */,
+				0C4BE0B31FBB3D9F00C4A2B6 /* DYLivingDataModel.swift in Sources */,
 				0C72207A1F930070006582AD /* DYBaseNetworkTool.swift in Sources */,
-				0C72212E1F9506C4006582AD /* DYLivingChannelModel.swift in Sources */,
 				3A5AF8BA1F4533B900C87770 /* UIView+HPAdd.m in Sources */,
 				3A4BEE5E1F39CD9100828B6A /* XEL_ContainerContentView.m in Sources */,
 				3A4BEE301F39CD9100828B6A /* UIButton+ImageTitleSpacing.m in Sources */,
@@ -844,7 +851,6 @@
 				3A4BEE3B1F39CD9100828B6A /* DYGameTableViewController.swift in Sources */,
 				3A4BEE511F39CD9100828B6A /* DYRecommendHeaderView.swift in Sources */,
 				0C72207D1F93037A006582AD /* AppDelegate.swift in Sources */,
-				0C7221321F950723006582AD /* DYLivingSubChannelModel.swift in Sources */,
 				3A4BEE3D1F39CD9100828B6A /* DYHomeViewController.swift in Sources */,
 				3A4BEE3E1F39CD9100828B6A /* DYMobileGameTableViewController.swift in Sources */,
 				3A4BEE2F1F39CD9100828B6A /* ButtonWithImageAndTitleExtension.swift in Sources */,
@@ -858,19 +864,20 @@
 				3A4BEE391F39CD9100828B6A /* DYAmuseTableViewController.swift in Sources */,
 				3A5064C81F46F57400D220D5 /* XELPopButton.swift in Sources */,
 				3A4BEE5F1F39CD9100828B6A /* XEL_ContainerTitleView.m in Sources */,
+				0C4BE0B41FBB3D9F00C4A2B6 /* DYLivingSubChannelModel.swift in Sources */,
 				3A4BEE5C1F39CD9100828B6A /* XEL_Configuration.m in Sources */,
 				3A4BEE4D1F39CD9100828B6A /* DYPrettyCollectionViewCell.swift in Sources */,
 				3A4BEE451F39CD9100828B6A /* DYHomeHeaderView.swift in Sources */,
 				3A4BEE611F39CD9100828B6A /* DYBaseNavigationController.swift in Sources */,
 				3A4BEE561F39CD9100828B6A /* DYMineTableViewController.swift in Sources */,
 				0C7221351F979DF8006582AD /* DYLivingGameViewController.swift in Sources */,
-				0C7221301F9506F2006582AD /* DYLivingDataModel.swift in Sources */,
 				0C1B4E881F9E383A005FFAFD /* PullDownView.swift in Sources */,
 				3A4BEE3A1F39CD9100828B6A /* DYFunTableViewController.swift in Sources */,
 				3A4BEE3F1F39CD9100828B6A /* DYRecommendTableViewController.swift in Sources */,
 				3A4BEE5B1F39CD9100828B6A /* Xel_Bridge.m in Sources */,
 				3A4BEE421F39CD9100828B6A /* DYAdScrollTableViewCell.swift in Sources */,
 				3A4BEE351F39CD9100828B6A /* DYThemeTableViewCell.swift in Sources */,
+				0C4BE0B51FBB3D9F00C4A2B6 /* DYLivingChannelModel.swift in Sources */,
 				3A4BEE591F39CD9100828B6A /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
