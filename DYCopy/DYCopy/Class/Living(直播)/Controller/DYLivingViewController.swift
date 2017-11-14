@@ -18,7 +18,6 @@ class DYLivingViewController: UIViewController {
         self.automaticallyAdjustsScrollViewInsets = false
         self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .plain, target: nil, action: nil)
         
-<<<<<<< HEAD
         getGameCategory()
         
     }
@@ -39,9 +38,7 @@ class DYLivingViewController: UIViewController {
 extension DYLivingViewController {
     // 获取游戏分类
     fileprivate func getGameCategory() {
-=======
-        // 获取游戏分类
->>>>>>> origin/master
+
         DYBaseNetworkTool.getColumnList { (modelData) in
             if let modelData = modelData {
                 if modelData.error == 0 {
@@ -55,31 +52,17 @@ extension DYLivingViewController {
             }
         }
     }
-    
-<<<<<<< HEAD
+
     // 添加标题和内容
     private func addContent(titles: Array<String>) {
-=======
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.`default`
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-    }
-    
-    // 添加标题和内容
-    func addContent(titles: Array<String>) {
->>>>>>> origin/master
+
         let configuration = XEL_Configuration.init()
         configuration.titleViewHeight = NavigationBarHeight
         configuration.titleViewScrollEable = true
         configuration.defaultIndex = 1
         configuration.titlesArray = ["常用", "全部"] + titles
         var controllersArray = [UIViewController]()
-<<<<<<< HEAD
+
         
         for i in 0..<configuration.titlesArray.count {
             if i == 0 || i == 1 || i == 3 || i == 7 || i == 10 {
@@ -95,17 +78,7 @@ extension DYLivingViewController {
         
         
         configuration.controllersArray = controllersArray
-=======
-        for i in 1...8 {
-            let gameVC = DYLivingGameViewController()
-            gameVC.short_name = self.modelArray[i-1].short_name!
-            gameVC.cate_id = self.modelArray[i-1].cate_id!
-            controllersArray.append(gameVC)
-        }
-        
-        
-        configuration.controllersArray = [DYLiveViewController(), DYLiveViewController(), controllersArray[0], DYLiveViewController(), controllersArray[1], controllersArray[2], controllersArray[3], controllersArray[4], controllersArray[5], controllersArray[6], controllersArray[7]]
->>>>>>> origin/master
+
         
         let titleView = XEL_ContainerTitleView.init(frame: CGRect.init(x: 0.0, y: StatusBarHeight, width: APP_SCREEN_WIDTH, height: NavigationBarHeight))
         titleView?.configuration = configuration

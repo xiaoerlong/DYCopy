@@ -13,12 +13,8 @@ class DYLivingChannelModel: Mappable {
     var cate_name: String?      // 分类
     var short_name: String?     // 短命名
     var cate_id: String?        // id
-    
-<<<<<<< HEAD
 
     
-=======
->>>>>>> origin/master
     required init?(map: Map) {
         
     }

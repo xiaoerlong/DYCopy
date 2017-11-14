@@ -19,7 +19,6 @@ class DYLivingGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-<<<<<<< HEAD
         getCategory()
         
         getList()
@@ -30,10 +29,7 @@ class DYLivingGameViewController: UIViewController {
 extension DYLivingGameViewController {
     // 获取分类
     fileprivate func getCategory() {
-=======
-        
-        // 获取分类
->>>>>>> origin/master
+
         DYBaseNetworkTool.getColumnDetial(shortName: short_name) { (modelData) in
             var temp = Array<String>()
             for model in (modelData?.data)! {
@@ -43,26 +39,18 @@ extension DYLivingGameViewController {
             self.pullView.delegate = self
             self.view.addSubview(self.pullView)
         }
-<<<<<<< HEAD
+
     }
     
     // 获取分类下的直播列表
     fileprivate func getList() {
-=======
-        
-        // 获取分类下的直播列表
->>>>>>> origin/master
+
         DYBaseNetworkTool.getColumnRoom(cate_id: cate_id, limit: 20, offset: 0) { (data) in
             self.livingListView = DYLivingListView.init(frame: CGRect.init(x: 0, y: self.pullView.height, width: self.view.frame.width, height: self.view.frame.height - self.pullView.height), dataArray: data.data!)
             self.view.addSubview(self.livingListView)
         }
-<<<<<<< HEAD
+
     }
-    
-=======
-        
-    }
->>>>>>> origin/master
 }
 
 extension DYLivingGameViewController: PullDownViewDelegate {
