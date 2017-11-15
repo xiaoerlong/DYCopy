@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYPlayViewController" customModule="斗鱼TV" customModuleProvider="target">
+            <connections>
+                <outlet property="birefView" destination="kzd-4M-KPn" id="ZHa-2x-iFv"/>
+                <outlet property="mediaControl" destination="jVf-3t-gW7" id="7cT-XD-UOL"/>
+                <outlet property="playView" destination="D2H-KK-HzU" id="xhr-hx-GxA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2H-KK-HzU">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="D2H-KK-HzU" secondAttribute="height" multiplier="16:9" priority="750" id="rXI-IO-5Z7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-4M-KPn">
+                    <rect key="frame" x="0.0" y="233" width="414" height="503"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderCorlor">
+                            <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kzd-4M-KPn" firstAttribute="top" secondItem="D2H-KK-HzU" secondAttribute="bottom" id="9tn-oj-8in"/>
+                <constraint firstItem="D2H-KK-HzU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AFM-Ac-fPf"/>
+                <constraint firstItem="kzd-4M-KPn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dpx-hb-k9r"/>
+                <constraint firstItem="D2H-KK-HzU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ScY-hK-oLf"/>
+                <constraint firstAttribute="trailing" secondItem="kzd-4M-KPn" secondAttribute="trailing" id="kDT-3l-C3t"/>
+                <constraint firstAttribute="trailing" secondItem="D2H-KK-HzU" secondAttribute="trailing" id="ljK-Mx-nDu"/>
+                <constraint firstAttribute="bottom" secondItem="kzd-4M-KPn" secondAttribute="bottom" id="zal-Jx-HRV"/>
+            </constraints>
+            <point key="canvasLocation" x="-172" y="-97"/>
+        </view>
+        <view contentMode="scaleToFill" id="jVf-3t-gW7" customClass="DYPlayControl" customModule="斗鱼TV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNl-l3-SgR" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="205"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7e-B6-aAh">
+                            <rect key="frame" x="0.0" y="161" width="414" height="44"/>
+                            <items>
+                                <barButtonItem style="plain" id="KSP-Au-QN3">
+                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aQv-lG-xgC">
+                                        <rect key="frame" x="20" y="7" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="暂停"/>
+                                        <state key="selected" title="播放"/>
+                                        <connections>
+                                            <action selector="onClickPlay:" destination="-1" eventType="touchUpInside" id="Kjp-on-aEs"/>
+                                        </connections>
+                                    </button>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="6fU-4b-8CD"/>
+                                <barButtonItem style="plain" id="Rr8-1k-Tec">
+                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z7E-82-BV8">
+                                        <rect key="frame" x="348" y="7" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="全屏"/>
+                                        <state key="selected" title="半屏"/>
+                                        <connections>
+                                            <action selector="onClickFull:" destination="-1" eventType="touchUpInside" id="wsS-cO-T33"/>
+                                        </connections>
+                                    </button>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPA-iq-2mj">
+                            <rect key="frame" x="10" y="5" width="34" height="34"/>
+                            <state key="normal" image="bc_back_icon"/>
+                            <connections>
+                                <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="7Ki-TA-WkJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="P7e-B6-aAh" secondAttribute="trailing" id="9zb-D1-EAm"/>
+                        <constraint firstItem="P7e-B6-aAh" firstAttribute="leading" secondItem="nNl-l3-SgR" secondAttribute="leading" id="AV0-Lu-CKo"/>
+                        <constraint firstItem="IPA-iq-2mj" firstAttribute="top" secondItem="nNl-l3-SgR" secondAttribute="top" constant="5" id="NKt-g3-Upd"/>
+                        <constraint firstAttribute="bottom" secondItem="P7e-B6-aAh" secondAttribute="bottom" id="bZw-RK-g8L"/>
+                        <constraint firstItem="IPA-iq-2mj" firstAttribute="leading" secondItem="nNl-l3-SgR" secondAttribute="leading" constant="10" id="z9v-JF-3Qr"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onClickOverlay:" destination="-1" eventType="touchDown" id="9BO-5m-jSY"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nNl-l3-SgR" secondAttribute="bottom" id="1B3-dL-vNR"/>
+                <constraint firstItem="nNl-l3-SgR" firstAttribute="top" secondItem="jVf-3t-gW7" secondAttribute="top" id="Gvr-Ir-fD4"/>
+                <constraint firstItem="nNl-l3-SgR" firstAttribute="leading" secondItem="jVf-3t-gW7" secondAttribute="leading" id="Lp2-lC-Ov4"/>
+                <constraint firstAttribute="trailing" secondItem="nNl-l3-SgR" secondAttribute="trailing" id="Vil-cB-rSL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <action selector="onClickMediaControl:" destination="-1" eventType="touchDown" id="mtS-Oe-mnJ"/>
+                <outlet property="fullButton" destination="z7E-82-BV8" id="rOn-pX-vhj"/>
+                <outlet property="overlayPanel" destination="nNl-l3-SgR" id="XuX-Fa-rhp"/>
+                <outlet property="playButton" destination="aQv-lG-xgC" id="8Lw-4L-k5I"/>
+            </connections>
+            <point key="canvasLocation" x="-172" y="440.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bc_back_icon" width="34" height="34"/>
+    </resources>
+</document>
