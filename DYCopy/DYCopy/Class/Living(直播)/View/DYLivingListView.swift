@@ -86,6 +86,7 @@ extension DYLivingListView: UICollectionViewDelegate, UICollectionViewDelegateFl
         let playVC = DYPlayViewController()
         let model = dataArray![indexPath.row]
         playVC.jumpURLString =  model.jumpUrl
+        playVC.room_id = model.room_id
         viewController?.navigationController?.pushViewController(playVC, animated: true)
     }
     

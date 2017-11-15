@@ -32,12 +32,6 @@
 		0CCB7F141FAA0B100058EAA7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB7F131FAA0B100058EAA7 /* StringExtension.swift */; };
 		3A4BEE2F1F39CD9100828B6A /* ButtonWithImageAndTitleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEDCE1F39CD9100828B6A /* ButtonWithImageAndTitleExtension.swift */; };
 		3A4BEE301F39CD9100828B6A /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEDD01F39CD9100828B6A /* UIButton+ImageTitleSpacing.m */; };
-		3A4BEE311F39CD9100828B6A /* DYBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEDD31F39CD9100828B6A /* DYBaseCollectionViewCell.swift */; };
-		3A4BEE321F39CD9100828B6A /* DYBaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4BEDD41F39CD9100828B6A /* DYBaseCollectionViewCell.xib */; };
-		3A4BEE331F39CD9100828B6A /* DYPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEDD51F39CD9100828B6A /* DYPlayViewController.swift */; };
-		3A4BEE341F39CD9100828B6A /* DYPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4BEDD61F39CD9100828B6A /* DYPlayViewController.xib */; };
-		3A4BEE351F39CD9100828B6A /* DYThemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEDD71F39CD9100828B6A /* DYThemeTableViewCell.swift */; };
-		3A4BEE361F39CD9100828B6A /* DYThemeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4BEDD81F39CD9100828B6A /* DYThemeTableViewCell.xib */; };
 		3A4BEE371F39CD9100828B6A /* DYFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEDE11F39CD9100828B6A /* DYFocusViewController.swift */; };
 		3A4BEE391F39CD9100828B6A /* DYAmuseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEDE91F39CD9100828B6A /* DYAmuseTableViewController.swift */; };
 		3A4BEE3A1F39CD9100828B6A /* DYFunTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEDEA1F39CD9100828B6A /* DYFunTableViewController.swift */; };
@@ -56,8 +50,6 @@
 		3A4BEE481F39CD9100828B6A /* DYHomeHeaderViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4BEDFC1F39CD9100828B6A /* DYHomeHeaderViewCollectionViewCell.xib */; };
 		3A4BEE491F39CD9100828B6A /* DYHomeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEDFD1F39CD9100828B6A /* DYHomeNavigationBar.swift */; };
 		3A4BEE4A1F39CD9100828B6A /* DYHomeNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4BEDFE1F39CD9100828B6A /* DYHomeNavigationBar.xib */; };
-		3A4BEE4B1F39CD9100828B6A /* DYNormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEDFF1F39CD9100828B6A /* DYNormalCollectionViewCell.swift */; };
-		3A4BEE4C1F39CD9100828B6A /* DYNormalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4BEE001F39CD9100828B6A /* DYNormalCollectionViewCell.xib */; };
 		3A4BEE4D1F39CD9100828B6A /* DYPrettyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEE011F39CD9100828B6A /* DYPrettyCollectionViewCell.swift */; };
 		3A4BEE4E1F39CD9100828B6A /* DYPrettyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4BEE021F39CD9100828B6A /* DYPrettyCollectionViewCell.xib */; };
 		3A4BEE4F1F39CD9100828B6A /* DYRecommendCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEE031F39CD9100828B6A /* DYRecommendCategoryView.swift */; };
@@ -78,9 +70,30 @@
 		3A4BEE621F39CD9100828B6A /* DYBaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BEE2E1F39CD9100828B6A /* DYBaseTabBarViewController.swift */; };
 		3A4BEE661F39CE8500828B6A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A4BEE651F39CE8500828B6A /* Info.plist */; };
 		3A5064C81F46F57400D220D5 /* XELPopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5064C71F46F57400D220D5 /* XELPopButton.swift */; };
-		3A5AF8B81F4533B900C87770 /* HPDesignableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AF8B31F4533B900C87770 /* HPDesignableButton.m */; };
-		3A5AF8B91F4533B900C87770 /* HPDesignableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AF8B51F4533B900C87770 /* HPDesignableView.m */; };
 		3A5AF8BA1F4533B900C87770 /* UIView+HPAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AF8B71F4533B900C87770 /* UIView+HPAdd.m */; };
+		3A8099431FBBF79F0013DA85 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8099421FBBF79F0013DA85 /* IJKMediaFramework.framework */; };
+		3A8099461FBC19250013DA85 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8099451FBC19240013DA85 /* libbz2.tbd */; };
+		3A8099471FBC192D0013DA85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8099441FBC19070013DA85 /* UIKit.framework */; };
+		3A8099491FBC19390013DA85 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8099481FBC19390013DA85 /* libz.tbd */; };
+		3A80994B1FBC19440013DA85 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A80994A1FBC19400013DA85 /* AudioToolbox.framework */; };
+		3A80994D1FBC19530013DA85 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A80994C1FBC194C0013DA85 /* AVFoundation.framework */; };
+		3A80994F1FBC195F0013DA85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A80994E1FBC195C0013DA85 /* CoreGraphics.framework */; };
+		3A8099511FBC196A0013DA85 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8099501FBC19670013DA85 /* CoreMedia.framework */; };
+		3A8099531FBC19720013DA85 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8099521FBC196F0013DA85 /* CoreVideo.framework */; };
+		3A8099551FBC197E0013DA85 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8099541FBC197C0013DA85 /* MediaPlayer.framework */; };
+		3A8099571FBC198A0013DA85 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8099561FBC19870013DA85 /* MobileCoreServices.framework */; };
+		3A8099591FBC19940013DA85 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8099581FBC19910013DA85 /* OpenGLES.framework */; };
+		3A80995B1FBC199C0013DA85 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A80995A1FBC199A0013DA85 /* QuartzCore.framework */; };
+		3A80995D1FBC19A90013DA85 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A80995C1FBC19A50013DA85 /* VideoToolbox.framework */; };
+		3A80996A1FBC33290013DA85 /* DYPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8099611FBC33290013DA85 /* DYPlayViewController.swift */; };
+		3A80996B1FBC33290013DA85 /* DYPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8099621FBC33290013DA85 /* DYPlayViewController.xib */; };
+		3A80996C1FBC33290013DA85 /* DYBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8099641FBC33290013DA85 /* DYBaseCollectionViewCell.swift */; };
+		3A80996D1FBC33290013DA85 /* DYBaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8099651FBC33290013DA85 /* DYBaseCollectionViewCell.xib */; };
+		3A80996E1FBC33290013DA85 /* DYNormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8099661FBC33290013DA85 /* DYNormalCollectionViewCell.swift */; };
+		3A80996F1FBC33290013DA85 /* DYNormalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8099671FBC33290013DA85 /* DYNormalCollectionViewCell.xib */; };
+		3A8099701FBC33290013DA85 /* DYThemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8099681FBC33290013DA85 /* DYThemeTableViewCell.swift */; };
+		3A8099711FBC33290013DA85 /* DYThemeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8099691FBC33290013DA85 /* DYThemeTableViewCell.xib */; };
+		3A8099761FBC348D0013DA85 /* DYPlayControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8099751FBC348D0013DA85 /* DYPlayControl.swift */; };
 		822E6BF00A9CDA3ABCC6D1EB /* Pods_DYCopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A3955564AE92E9D3966710 /* Pods_DYCopy.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,12 +125,6 @@
 		3A4BEDCE1F39CD9100828B6A /* ButtonWithImageAndTitleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithImageAndTitleExtension.swift; sourceTree = "<group>"; };
 		3A4BEDCF1F39CD9100828B6A /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
 		3A4BEDD01F39CD9100828B6A /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
-		3A4BEDD31F39CD9100828B6A /* DYBaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYBaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		3A4BEDD41F39CD9100828B6A /* DYBaseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYBaseCollectionViewCell.xib; sourceTree = "<group>"; };
-		3A4BEDD51F39CD9100828B6A /* DYPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYPlayViewController.swift; sourceTree = "<group>"; };
-		3A4BEDD61F39CD9100828B6A /* DYPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPlayViewController.xib; sourceTree = "<group>"; };
-		3A4BEDD71F39CD9100828B6A /* DYThemeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYThemeTableViewCell.swift; sourceTree = "<group>"; };
-		3A4BEDD81F39CD9100828B6A /* DYThemeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYThemeTableViewCell.xib; sourceTree = "<group>"; };
 		3A4BEDE11F39CD9100828B6A /* DYFocusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYFocusViewController.swift; sourceTree = "<group>"; };
 		3A4BEDE91F39CD9100828B6A /* DYAmuseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYAmuseTableViewController.swift; sourceTree = "<group>"; };
 		3A4BEDEA1F39CD9100828B6A /* DYFunTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYFunTableViewController.swift; sourceTree = "<group>"; };
@@ -136,8 +143,6 @@
 		3A4BEDFC1F39CD9100828B6A /* DYHomeHeaderViewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYHomeHeaderViewCollectionViewCell.xib; sourceTree = "<group>"; };
 		3A4BEDFD1F39CD9100828B6A /* DYHomeNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYHomeNavigationBar.swift; sourceTree = "<group>"; };
 		3A4BEDFE1F39CD9100828B6A /* DYHomeNavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYHomeNavigationBar.xib; sourceTree = "<group>"; };
-		3A4BEDFF1F39CD9100828B6A /* DYNormalCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYNormalCollectionViewCell.swift; sourceTree = "<group>"; };
-		3A4BEE001F39CD9100828B6A /* DYNormalCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYNormalCollectionViewCell.xib; sourceTree = "<group>"; };
 		3A4BEE011F39CD9100828B6A /* DYPrettyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYPrettyCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A4BEE021F39CD9100828B6A /* DYPrettyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPrettyCollectionViewCell.xib; sourceTree = "<group>"; };
 		3A4BEE031F39CD9100828B6A /* DYRecommendCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRecommendCategoryView.swift; sourceTree = "<group>"; };
@@ -165,12 +170,31 @@
 		3A4BEE2E1F39CD9100828B6A /* DYBaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYBaseTabBarViewController.swift; sourceTree = "<group>"; };
 		3A4BEE651F39CE8500828B6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A5064C71F46F57400D220D5 /* XELPopButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XELPopButton.swift; sourceTree = "<group>"; };
-		3A5AF8B21F4533B900C87770 /* HPDesignableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDesignableButton.h; sourceTree = "<group>"; };
-		3A5AF8B31F4533B900C87770 /* HPDesignableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDesignableButton.m; sourceTree = "<group>"; };
-		3A5AF8B41F4533B900C87770 /* HPDesignableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDesignableView.h; sourceTree = "<group>"; };
-		3A5AF8B51F4533B900C87770 /* HPDesignableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDesignableView.m; sourceTree = "<group>"; };
 		3A5AF8B61F4533B900C87770 /* UIView+HPAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HPAdd.h"; sourceTree = "<group>"; };
 		3A5AF8B71F4533B900C87770 /* UIView+HPAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HPAdd.m"; sourceTree = "<group>"; };
+		3A8099421FBBF79F0013DA85 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		3A8099441FBC19070013DA85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3A8099451FBC19240013DA85 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		3A8099481FBC19390013DA85 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3A80994A1FBC19400013DA85 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3A80994C1FBC194C0013DA85 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3A80994E1FBC195C0013DA85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A8099501FBC19670013DA85 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3A8099521FBC196F0013DA85 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3A8099541FBC197C0013DA85 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3A8099561FBC19870013DA85 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3A8099581FBC19910013DA85 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3A80995A1FBC199A0013DA85 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3A80995C1FBC19A50013DA85 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		3A8099611FBC33290013DA85 /* DYPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYPlayViewController.swift; sourceTree = "<group>"; };
+		3A8099621FBC33290013DA85 /* DYPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPlayViewController.xib; sourceTree = "<group>"; };
+		3A8099641FBC33290013DA85 /* DYBaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A8099651FBC33290013DA85 /* DYBaseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYBaseCollectionViewCell.xib; sourceTree = "<group>"; };
+		3A8099661FBC33290013DA85 /* DYNormalCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYNormalCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A8099671FBC33290013DA85 /* DYNormalCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYNormalCollectionViewCell.xib; sourceTree = "<group>"; };
+		3A8099681FBC33290013DA85 /* DYThemeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYThemeTableViewCell.swift; sourceTree = "<group>"; };
+		3A8099691FBC33290013DA85 /* DYThemeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYThemeTableViewCell.xib; sourceTree = "<group>"; };
+		3A8099751FBC348D0013DA85 /* DYPlayControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYPlayControl.swift; sourceTree = "<group>"; };
 		867BE1F3763E6245DB390AA2 /* Pods-DYCopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYCopy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYCopy/Pods-DYCopy.debug.xcconfig"; sourceTree = "<group>"; };
 		B4A3955564AE92E9D3966710 /* Pods_DYCopy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYCopy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E64213161EE06F46DCB80E /* Pods-DYCopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYCopy.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYCopy/Pods-DYCopy.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,7 +205,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8099471FBC192D0013DA85 /* UIKit.framework in Frameworks */,
+				3A8099461FBC19250013DA85 /* libbz2.tbd in Frameworks */,
 				822E6BF00A9CDA3ABCC6D1EB /* Pods_DYCopy.framework in Frameworks */,
+				3A8099431FBBF79F0013DA85 /* IJKMediaFramework.framework in Frameworks */,
+				3A8099491FBC19390013DA85 /* libz.tbd in Frameworks */,
+				3A80994B1FBC19440013DA85 /* AudioToolbox.framework in Frameworks */,
+				3A80994D1FBC19530013DA85 /* AVFoundation.framework in Frameworks */,
+				3A80994F1FBC195F0013DA85 /* CoreGraphics.framework in Frameworks */,
+				3A8099511FBC196A0013DA85 /* CoreMedia.framework in Frameworks */,
+				3A8099531FBC19720013DA85 /* CoreVideo.framework in Frameworks */,
+				3A8099551FBC197E0013DA85 /* MediaPlayer.framework in Frameworks */,
+				3A8099571FBC198A0013DA85 /* MobileCoreServices.framework in Frameworks */,
+				3A8099591FBC19940013DA85 /* OpenGLES.framework in Frameworks */,
+				3A80995B1FBC199C0013DA85 /* QuartzCore.framework in Frameworks */,
+				3A80995D1FBC19A90013DA85 /* VideoToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,8 +262,8 @@
 				3A4BEDCD1F39CD9100828B6A /* Category */,
 				0CCB7F121FAA0AF30058EAA7 /* Extension */,
 				3A4BEE1D1F39CD9100828B6A /* Help */,
-				3A4BEE2A1F39CD9100828B6A /* Lib */,
 				3A4BEE2B1F39CD9100828B6A /* Root */,
+				3A8099411FBBF7750013DA85 /* Framework */,
 				0C72207B1F9302D1006582AD /* AppDelegate */,
 				0C1E3BE71E99EEAC00553295 /* Main.storyboard */,
 				0C1E3BEA1E99EEAC00553295 /* Assets.xcassets */,
@@ -243,13 +281,6 @@
 				0C4BE0B11FBB3D9F00C4A2B6 /* DYLivingSubChannelModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		0C4BE0B61FBB3DC000C4A2B6 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		0C7220781F92FC54006582AD /* Network */ = {
@@ -272,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				0CCB7F131FAA0B100058EAA7 /* StringExtension.swift */,
+				3A4BEDCE1F39CD9100828B6A /* ButtonWithImageAndTitleExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -279,7 +311,6 @@
 		3A4BEDCD1F39CD9100828B6A /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				3A4BEDCE1F39CD9100828B6A /* ButtonWithImageAndTitleExtension.swift */,
 				3A4BEDCF1F39CD9100828B6A /* UIButton+ImageTitleSpacing.h */,
 				3A4BEDD01F39CD9100828B6A /* UIButton+ImageTitleSpacing.m */,
 			);
@@ -289,7 +320,6 @@
 		3A4BEDD11F39CD9100828B6A /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				0C4BE0B61FBB3DC000C4A2B6 /* Base */,
 				3A4BEDD21F39CD9100828B6A /* Common */,
 				3A4BEDE71F39CD9100828B6A /* Home(首页) */,
 				3A4BEE071F39CD9100828B6A /* Living(直播) */,
@@ -303,12 +333,9 @@
 		3A4BEDD21F39CD9100828B6A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3A4BEDD31F39CD9100828B6A /* DYBaseCollectionViewCell.swift */,
-				3A4BEDD41F39CD9100828B6A /* DYBaseCollectionViewCell.xib */,
-				3A4BEDD51F39CD9100828B6A /* DYPlayViewController.swift */,
-				3A4BEDD61F39CD9100828B6A /* DYPlayViewController.xib */,
-				3A4BEDD71F39CD9100828B6A /* DYThemeTableViewCell.swift */,
-				3A4BEDD81F39CD9100828B6A /* DYThemeTableViewCell.xib */,
+				3A8099601FBC33290013DA85 /* Controller */,
+				3A80995F1FBC33290013DA85 /* Model */,
+				3A8099631FBC33290013DA85 /* View */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -471,8 +498,6 @@
 				3A4BEDFC1F39CD9100828B6A /* DYHomeHeaderViewCollectionViewCell.xib */,
 				3A4BEDFD1F39CD9100828B6A /* DYHomeNavigationBar.swift */,
 				3A4BEDFE1F39CD9100828B6A /* DYHomeNavigationBar.xib */,
-				3A4BEDFF1F39CD9100828B6A /* DYNormalCollectionViewCell.swift */,
-				3A4BEE001F39CD9100828B6A /* DYNormalCollectionViewCell.xib */,
 				3A4BEE011F39CD9100828B6A /* DYPrettyCollectionViewCell.swift */,
 				3A4BEE021F39CD9100828B6A /* DYPrettyCollectionViewCell.xib */,
 				3A4BEE031F39CD9100828B6A /* DYRecommendCategoryView.swift */,
@@ -605,13 +630,6 @@
 			path = XEL_Container;
 			sourceTree = "<group>";
 		};
-		3A4BEE2A1F39CD9100828B6A /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
 		3A4BEE2B1F39CD9100828B6A /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -632,14 +650,48 @@
 		3A5AF8B11F4533B900C87770 /* IBDesignable和IBInspectable */ = {
 			isa = PBXGroup;
 			children = (
-				3A5AF8B21F4533B900C87770 /* HPDesignableButton.h */,
-				3A5AF8B31F4533B900C87770 /* HPDesignableButton.m */,
-				3A5AF8B41F4533B900C87770 /* HPDesignableView.h */,
-				3A5AF8B51F4533B900C87770 /* HPDesignableView.m */,
 				3A5AF8B61F4533B900C87770 /* UIView+HPAdd.h */,
 				3A5AF8B71F4533B900C87770 /* UIView+HPAdd.m */,
 			);
 			path = "IBDesignable和IBInspectable";
+			sourceTree = "<group>";
+		};
+		3A8099411FBBF7750013DA85 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				3A8099421FBBF79F0013DA85 /* IJKMediaFramework.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		3A80995F1FBC33290013DA85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A8099601FBC33290013DA85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A8099611FBC33290013DA85 /* DYPlayViewController.swift */,
+				3A8099621FBC33290013DA85 /* DYPlayViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A8099631FBC33290013DA85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A8099641FBC33290013DA85 /* DYBaseCollectionViewCell.swift */,
+				3A8099651FBC33290013DA85 /* DYBaseCollectionViewCell.xib */,
+				3A8099661FBC33290013DA85 /* DYNormalCollectionViewCell.swift */,
+				3A8099671FBC33290013DA85 /* DYNormalCollectionViewCell.xib */,
+				3A8099681FBC33290013DA85 /* DYThemeTableViewCell.swift */,
+				3A8099691FBC33290013DA85 /* DYThemeTableViewCell.xib */,
+				3A8099751FBC348D0013DA85 /* DYPlayControl.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		45A64C536100F5918134CEE4 /* Pods */ = {
@@ -654,6 +706,19 @@
 		536C99C154673AEE4155E5AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A80995C1FBC19A50013DA85 /* VideoToolbox.framework */,
+				3A80995A1FBC199A0013DA85 /* QuartzCore.framework */,
+				3A8099581FBC19910013DA85 /* OpenGLES.framework */,
+				3A8099561FBC19870013DA85 /* MobileCoreServices.framework */,
+				3A8099541FBC197C0013DA85 /* MediaPlayer.framework */,
+				3A8099521FBC196F0013DA85 /* CoreVideo.framework */,
+				3A8099501FBC19670013DA85 /* CoreMedia.framework */,
+				3A80994E1FBC195C0013DA85 /* CoreGraphics.framework */,
+				3A80994C1FBC194C0013DA85 /* AVFoundation.framework */,
+				3A80994A1FBC19400013DA85 /* AudioToolbox.framework */,
+				3A8099481FBC19390013DA85 /* libz.tbd */,
+				3A8099451FBC19240013DA85 /* libbz2.tbd */,
+				3A8099441FBC19070013DA85 /* UIKit.framework */,
 				B4A3955564AE92E9D3966710 /* Pods_DYCopy.framework */,
 			);
 			name = Frameworks;
@@ -725,17 +790,16 @@
 			files = (
 				0CA52FDE1F40528100CF05B3 /* Living.storyboard in Resources */,
 				0CA52FE51F40563100CF05B3 /* Home.storyboard in Resources */,
+				3A80996D1FBC33290013DA85 /* DYBaseCollectionViewCell.xib in Resources */,
 				3A4BEE441F39CD9100828B6A /* DYCategoryTableViewCell.xib in Resources */,
+				3A80996B1FBC33290013DA85 /* DYPlayViewController.xib in Resources */,
 				0CA52FE01F40533800CF05B3 /* Focus.storyboard in Resources */,
-				3A4BEE361F39CD9100828B6A /* DYThemeTableViewCell.xib in Resources */,
 				3A4BEE4A1F39CD9100828B6A /* DYHomeNavigationBar.xib in Resources */,
+				3A8099711FBC33290013DA85 /* DYThemeTableViewCell.xib in Resources */,
 				0C1C7BEA1F492F8F00744401 /* DYHistoryTableViewCell.xib in Resources */,
-				3A4BEE321F39CD9100828B6A /* DYBaseCollectionViewCell.xib in Resources */,
 				3A4BEE521F39CD9100828B6A /* DYRecommendHeaderView.xib in Resources */,
 				0C1C7BEE1F49A58600744401 /* DYHistoryVideoTableViewCell.xib in Resources */,
-				3A4BEE4C1F39CD9100828B6A /* DYNormalCollectionViewCell.xib in Resources */,
 				3A4BEE461F39CD9100828B6A /* DYHomeHeaderView.xib in Resources */,
-				3A4BEE341F39CD9100828B6A /* DYPlayViewController.xib in Resources */,
 				0C1E3BEE1E99EEAC00553295 /* LaunchScreen.storyboard in Resources */,
 				0C7221381F979F6A006582AD /* Living.xcassets in Resources */,
 				0C1E3BEB1E99EEAC00553295 /* Assets.xcassets in Resources */,
@@ -745,6 +809,7 @@
 				3A4BEE501F39CD9100828B6A /* DYRecommendCategoryView.xib in Resources */,
 				3A4BEE581F39CD9100828B6A /* Mine.xcassets in Resources */,
 				0CA52FD81F404F3300CF05B3 /* Mine.storyboard in Resources */,
+				3A80996F1FBC33290013DA85 /* DYNormalCollectionViewCell.xib in Resources */,
 				3A4BEE411F39CD9100828B6A /* Home.xcassets in Resources */,
 				3A4BEE661F39CE8500828B6A /* Info.plist in Resources */,
 				0CA52FE31F40538800CF05B3 /* Discovery.storyboard in Resources */,
@@ -834,10 +899,9 @@
 				0C1C7BE91F492F8F00744401 /* DYHistoryTableViewCell.swift in Sources */,
 				3A4BEE5D1F39CD9100828B6A /* XEL_Container.m in Sources */,
 				3A4BEE3C1F39CD9100828B6A /* DYHomeCategoryViewController.swift in Sources */,
-				3A4BEE311F39CD9100828B6A /* DYBaseCollectionViewCell.swift in Sources */,
 				0C1C7BE61F492EE000744401 /* DYHistoryViewController.swift in Sources */,
-				3A5AF8B81F4533B900C87770 /* HPDesignableButton.m in Sources */,
 				3A4BEE621F39CD9100828B6A /* DYBaseTabBarViewController.swift in Sources */,
+				3A80996E1FBC33290013DA85 /* DYNormalCollectionViewCell.swift in Sources */,
 				0C4BE0B31FBB3D9F00C4A2B6 /* DYLivingDataModel.swift in Sources */,
 				0C72207A1F930070006582AD /* DYBaseNetworkTool.swift in Sources */,
 				3A5AF8BA1F4533B900C87770 /* UIView+HPAdd.m in Sources */,
@@ -847,7 +911,6 @@
 				3A4BEE371F39CD9100828B6A /* DYFocusViewController.swift in Sources */,
 				0CCB7F141FAA0B100058EAA7 /* StringExtension.swift in Sources */,
 				3A4BEE4F1F39CD9100828B6A /* DYRecommendCategoryView.swift in Sources */,
-				3A5AF8B91F4533B900C87770 /* HPDesignableView.m in Sources */,
 				3A4BEE3B1F39CD9100828B6A /* DYGameTableViewController.swift in Sources */,
 				3A4BEE511F39CD9100828B6A /* DYRecommendHeaderView.swift in Sources */,
 				0C72207D1F93037A006582AD /* AppDelegate.swift in Sources */,
@@ -856,16 +919,18 @@
 				3A4BEE2F1F39CD9100828B6A /* ButtonWithImageAndTitleExtension.swift in Sources */,
 				3A4BEE491F39CD9100828B6A /* DYHomeNavigationBar.swift in Sources */,
 				3A4BEE541F39CD9100828B6A /* DYLivingViewController.swift in Sources */,
-				3A4BEE4B1F39CD9100828B6A /* DYNormalCollectionViewCell.swift in Sources */,
 				3A4BEE531F39CD9100828B6A /* DYLiveViewController.swift in Sources */,
-				3A4BEE331F39CD9100828B6A /* DYPlayViewController.swift in Sources */,
+				3A80996C1FBC33290013DA85 /* DYBaseCollectionViewCell.swift in Sources */,
 				3A4BEE431F39CD9100828B6A /* DYCategoryTableViewCell.swift in Sources */,
 				0CCB7F111FA778890058EAA7 /* DYLivingListView.swift in Sources */,
 				3A4BEE391F39CD9100828B6A /* DYAmuseTableViewController.swift in Sources */,
+				3A8099701FBC33290013DA85 /* DYThemeTableViewCell.swift in Sources */,
 				3A5064C81F46F57400D220D5 /* XELPopButton.swift in Sources */,
 				3A4BEE5F1F39CD9100828B6A /* XEL_ContainerTitleView.m in Sources */,
 				0C4BE0B41FBB3D9F00C4A2B6 /* DYLivingSubChannelModel.swift in Sources */,
 				3A4BEE5C1F39CD9100828B6A /* XEL_Configuration.m in Sources */,
+				3A8099761FBC348D0013DA85 /* DYPlayControl.swift in Sources */,
+				3A80996A1FBC33290013DA85 /* DYPlayViewController.swift in Sources */,
 				3A4BEE4D1F39CD9100828B6A /* DYPrettyCollectionViewCell.swift in Sources */,
 				3A4BEE451F39CD9100828B6A /* DYHomeHeaderView.swift in Sources */,
 				3A4BEE611F39CD9100828B6A /* DYBaseNavigationController.swift in Sources */,
@@ -876,7 +941,6 @@
 				3A4BEE3F1F39CD9100828B6A /* DYRecommendTableViewController.swift in Sources */,
 				3A4BEE5B1F39CD9100828B6A /* Xel_Bridge.m in Sources */,
 				3A4BEE421F39CD9100828B6A /* DYAdScrollTableViewCell.swift in Sources */,
-				3A4BEE351F39CD9100828B6A /* DYThemeTableViewCell.swift in Sources */,
 				0C4BE0B51FBB3D9F00C4A2B6 /* DYLivingChannelModel.swift in Sources */,
 				3A4BEE591F39CD9100828B6A /* Const.swift in Sources */,
 			);
@@ -1014,15 +1078,44 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2HQ3E92U25;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DYCopy/Framework",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = DYCopy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"BMPlayer\"",
+					"-framework",
+					"\"ESPullToRefresh\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"NVActivityIndicatorView\"",
+					"-framework",
+					"\"ObjectMapper\"",
+					"-framework",
+					"\"SDCycleScrollView\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xel.DYCopy;
 				PRODUCT_NAME = "斗鱼TV";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/DYCopy/Global/DYCopy-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/DYCopy/Global/DYCopy-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -1035,15 +1128,44 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2HQ3E92U25;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DYCopy/Framework",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = DYCopy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"BMPlayer\"",
+					"-framework",
+					"\"ESPullToRefresh\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"NVActivityIndicatorView\"",
+					"-framework",
+					"\"ObjectMapper\"",
+					"-framework",
+					"\"SDCycleScrollView\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xel.DYCopy;
 				PRODUCT_NAME = "斗鱼TV";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/DYCopy/Global/DYCopy-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/DYCopy/Global/DYCopy-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

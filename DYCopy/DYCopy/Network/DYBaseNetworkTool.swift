@@ -128,16 +128,17 @@ class DYBaseNetworkTool: NetworkToolProtocol {
     
     /// 获取房间信息
     class func getRoomDetial(room_id: String, completionHandle: @escaping (DYLivingData) -> ()) {
-        let timeStamp = Int(NSDate().timeIntervalSince1970)/1000
-
+        let timeStamp = Int(NSDate().timeIntervalSince1970)
+        debugPrint("timeStamp:\(timeStamp)")
         let url = BASE_URL + "api/v1/room/" + room_id
         let params = ["aid": "android",
+                      "cnd": "ws",
                       "client_sys": "android",
                       "time": "\(timeStamp)",
-                      "auth": "room/\(room_id)?aid=android&clientsys=android&time=1231".md5()]
+                      "auth": "room/\(room_id)?aid=android&cdn=ws&client_sys=android&time=\(timeStamp)1231".md5()]
         
 
-        Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
+        Alamofire.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
 
             debugPrint(response)
             guard response.result.isSuccess else {
