@@ -5,6 +5,7 @@ PODS:
     - SnapKit (~> 3.0)
   - ESPullToRefresh (2.4)
   - Kingfisher (3.2.4)
+  - LFLiveKit (2.6)
   - NVActivityIndicatorView (3.2)
   - ObjectMapper (2.2.2)
   - SDCycleScrollView (1.65):
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - BMPlayer
   - ESPullToRefresh
   - Kingfisher (~> 3.0)
+  - LFLiveKit
   - ObjectMapper (~> 2.2)
   - SDCycleScrollView (~> 1.64)
   - SwiftyJSON
@@ -29,6 +31,7 @@ SPEC CHECKSUMS:
   BMPlayer: 3823671b8f6f76aedd398c21019e4ba2a2c95de1
   ESPullToRefresh: e7c754b4c43dec6b945f3cfdb7ddb0cacb18a43f
   Kingfisher: 8d80f39da403cd9c9ee11984e1655f4d6a566cdb
+  LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
   NVActivityIndicatorView: 28942c18ced111a6a3ce5e6f5b27d9d40116d639
   ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
@@ -36,6 +39,6 @@ SPEC CHECKSUMS:
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: e2ffaf22ff34e0ecdc9111d8945f340399d8920c
+PODFILE CHECKSUM: 43a7d0b7c03092e0aff9e916117dc71cf3dbc013
 
 COCOAPODS: 1.3.1

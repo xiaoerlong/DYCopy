@@ -88,7 +88,7 @@ extension DYPlayViewController {
     fileprivate func setupView() {
         let configuration = XEL_Configuration.init()
         configuration.controllersArray = [UIViewController.init()]
-        configuration.titlesArray = ["弹幕", "主播", "视频"]
+        configuration.titlesArray = ["聊天", "主播", "视频"]
         
         let container = XEL_Container.init(frame: birefView.bounds, parentController: self, configuration: configuration)
         birefView.addSubview(container!)
@@ -109,8 +109,6 @@ extension DYPlayViewController {
         options?.setFormatOptionIntValue(0, forKey: "auto_convert")
         player = IJKFFMoviePlayerController.init(contentURL: url, with: options)
         if let player = player {
-            player.view.layer.borderColor = UIColor.red.cgColor
-            player.view.layer.borderWidth = 1
             player.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             player.view.frame = self.playView.bounds
             self.playView.autoresizesSubviews = true

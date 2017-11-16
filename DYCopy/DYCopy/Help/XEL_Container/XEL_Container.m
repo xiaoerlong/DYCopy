@@ -21,6 +21,11 @@
 
 @property (nonatomic, strong) XEL_Configuration *configuration;
 @property (nonatomic, strong) Xel_Bridge *bridge;
+
+// =====使用协议的方式
+@property (nonatomic, assign) NSInteger count;
+// =====end
+
 @end
 
 @implementation XEL_Container
@@ -46,6 +51,20 @@
     }
     return self;
 }
+
+//#pragma mark -
+//#pragma mark Setter
+//- (void)setDataSource:(id<XEL_ContainerDataSource>)dataSource {
+//    _dataSource = dataSource;
+//    if (dataSource) {
+//        self.count = [dataSource numberOfItemsInContainer:self];
+//        for (int i = 0; i < self.count; i++) {
+//            NSString *title = [dataSource container:self titleForRowAtIndex:i];
+//            NSAssert(title, @"title为空");
+//
+//        }
+//    }
+//}
 
 
 #pragma mark -

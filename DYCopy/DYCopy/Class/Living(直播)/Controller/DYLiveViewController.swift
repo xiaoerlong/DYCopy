@@ -15,12 +15,14 @@ class DYLiveViewController: UIViewController {
     var livingListView = DYLivingListView()
     var offset = 0
     var limit = 10
+    var delegate: DYLiveViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         livingListView = DYLivingListView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height - 64-49), dataArray: nil)
         livingListView.viewController = self
+        livingListView.delegate = self
         self.view.addSubview(livingListView)
         
         
@@ -76,6 +78,16 @@ extension DYLiveViewController {
     }
 }
 
+extension DYLiveViewController: DYLivingListViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if let delegate = delegate {
+            delegate.scrollViewDidScroll(scrollView)
+        }
+    }
+}
 
+protocol DYLiveViewControllerDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView)
+}
 
 

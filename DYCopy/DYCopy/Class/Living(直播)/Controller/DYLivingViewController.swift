@@ -12,11 +12,12 @@ class DYLivingViewController: UIViewController {
 
     var bridge: Xel_Bridge?
     var modelArray = [DYLivingChannelModel]()
+    fileprivate var titleView: XEL_ContainerTitleView?
+    fileprivate var contentView: XEL_ContainerContentView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
-//        self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .plain, target: nil, action: nil)
         
         getGameCategory()
         
@@ -67,6 +68,7 @@ extension DYLivingViewController {
         for i in 0..<configuration.titlesArray.count {
             if i == 0 || i == 1 || i == 3 || i == 7 || i == 10 {
                 let controller = DYLiveViewController()
+//                controller.delegate = self
                 controllersArray.append(controller)
             } else {
                 let controller = DYLivingGameViewController()
@@ -80,9 +82,10 @@ extension DYLivingViewController {
         configuration.controllersArray = controllersArray
 
         
-        let titleView = XEL_ContainerTitleView.init(frame: CGRect.init(x: 0.0, y: StatusBarHeight, width: APP_SCREEN_WIDTH, height: NavigationBarHeight))
+        titleView = XEL_ContainerTitleView.init(frame: CGRect.init(x: 0.0, y: StatusBarHeight, width: APP_SCREEN_WIDTH, height: NavigationBarHeight))
         titleView?.configuration = configuration
-        let contentView = XEL_ContainerContentView.init(frame: CGRect.init(x: 0, y: StatusBarHeight + NavigationBarHeight, width: APP_SCREEN_WIDTH, height: APP_SCREEN_HEIGHT - StatusBarHeight - NavigationBarHeight - TabbarHeight),parentController: self)
+        
+        contentView = XEL_ContainerContentView.init(frame: CGRect.init(x: 0, y: StatusBarHeight + NavigationBarHeight, width: APP_SCREEN_WIDTH, height: APP_SCREEN_HEIGHT - StatusBarHeight - NavigationBarHeight - TabbarHeight),parentController: self)
         contentView?.configuration = configuration
         
         bridge = Xel_Bridge.init(titleView: titleView, contentView: contentView)
@@ -92,4 +95,19 @@ extension DYLivingViewController {
         self.view.addSubview(contentView!)
     }
 }
+
+
+//extension DYLivingViewController: DYLiveViewControllerDelegate {
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        if scrollView.contentOffset.y > 100 {
+//            titleView?.frame.origin.y = -StatusBarHeight - NavigationBarHeight
+//            contentView?.frame.origin.y = StatusBarHeight
+//            contentView?.frame.size.height += NavigationBarHeight
+//        } else {
+//            titleView?.frame.origin.y = StatusBarHeight
+//            contentView?.frame.origin.y = StatusBarHeight + NavigationBarHeight
+//            contentView?.frame.size.height -= NavigationBarHeight
+//        }
+//    }
+//}
 

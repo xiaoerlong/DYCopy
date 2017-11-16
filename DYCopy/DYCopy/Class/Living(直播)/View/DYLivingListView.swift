@@ -16,9 +16,9 @@ private let normalIdentifier = "NormalCollectionCell"
 
 class DYLivingListView: UIView {
     
-    public var dataArray: [DYLivingDataModel]?
-    public var viewController: UIViewController?
-
+    var dataArray: [DYLivingDataModel]?
+    var viewController: UIViewController?
+    var delegate: DYLivingListViewDelegate?
 
     //MARK: lzay init
     lazy var collectionView: UICollectionView = {
@@ -93,7 +93,21 @@ extension DYLivingListView: UICollectionViewDelegate, UICollectionViewDelegateFl
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.init(top: 5, left: kItemMargin, bottom: 5, right: kItemMargin)
     }
+    
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if let delegate = delegate {
+            delegate.scrollViewDidScroll(scrollView)
+        }
+    }
 }
+
+protocol DYLivingListViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView)
+}
+
+
 
 
 

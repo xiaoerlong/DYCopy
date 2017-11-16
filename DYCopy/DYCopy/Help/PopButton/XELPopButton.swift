@@ -18,12 +18,12 @@ let kRightMargin: CGFloat   = 30.0
 
 class XELPopButton: UIButton {
     
-    public var titlesArray = Array<String>.init()
-    public var imagesArray: Array<UIImage>?
+    var titlesArray = Array<String>.init()
+    var imagesArray: Array<UIImage>?
     
-    private var completion: ((NSInteger) -> Void)?
-    private var dimmingView: UIView?
-    private var buttonsArray = Array<UIButton>.init()
+    fileprivate var completion: ((NSInteger) -> Void)?
+    fileprivate var dimmingView: UIView?
+    fileprivate var buttonsArray = Array<UIButton>.init()
     
     private var bottom: CGFloat = 0.0
     
@@ -39,7 +39,10 @@ class XELPopButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func show(completion: @escaping (_ index: NSInteger) -> Void) {
+}
+
+extension XELPopButton {
+    func show(completion: @escaping (_ index: NSInteger) -> Void) {
         dimmingView = UIView.init(frame: UIScreen.main.bounds.offsetBy(dx: 0, dy: 0))
         dimmingView?.alpha = 0
         dimmingView?.backgroundColor = UIColor.black
@@ -69,12 +72,14 @@ class XELPopButton: UIButton {
                 button.frame = CGRect.init(x: self.frame.maxX - kButtonWidth, y: self.frame.maxY - CGFloat(i + 1) * (kButtonHeight + kButtonMargin), width: kButtonWidth, height: kButtonHeight)
                 self.dimmingView?.alpha = 0.6
             }, completion: { (finished) in
-
+                
             })
         }
     }
-    
-    @objc private func dismiss() -> Void {
+}
+
+extension XELPopButton {
+    @objc fileprivate func dismiss() -> Void {
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
             for button in self.buttonsArray {
                 button.frame = CGRect.init(x: self.frame.maxX - kButtonWidth, y: self.frame.minY, width: kButtonWidth, height: kButtonHeight)
@@ -89,7 +94,7 @@ class XELPopButton: UIButton {
         }
     }
     
-    @objc private func doSomething(_ btn: UIButton)-> Void {
+    @objc fileprivate func doSomething(_ btn: UIButton)-> Void {
         if let completion = self.completion {
             completion(btn.tag)
         }

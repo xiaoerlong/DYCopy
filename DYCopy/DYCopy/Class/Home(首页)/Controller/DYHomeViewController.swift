@@ -10,21 +10,46 @@ import UIKit
 
 class DYHomeViewController: UIViewController {
     
-    private let buttonPadding: CGFloat = 10
-    private let buttonWidthHeight: CGFloat = 50
+    fileprivate let buttonPadding: CGFloat = 10
+    fileprivate let buttonWidthHeight: CGFloat = 50
     
-    var recommend: DYRecommendTableViewController!
-    var mobileGame: DYMobileGameTableViewController!
-    var amuse: DYAmuseTableViewController!
-    var game: DYGameTableViewController!
-    var fun: DYFunTableViewController!
-    private var popBtn: XELPopButton?
+    fileprivate var recommend: DYRecommendTableViewController!
+    fileprivate var mobileGame: DYMobileGameTableViewController!
+    fileprivate var amuse: DYAmuseTableViewController!
+    fileprivate var game: DYGameTableViewController!
+    fileprivate var fun: DYFunTableViewController!
+    fileprivate var popBtn: XELPopButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hidesBottomBarWhenPushed = true
         setCustomNavigationBar()
-        
+        setupSubView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        addPopButton()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        popBtn?.removeFromSuperview()
+    }
+    
+}
+
+extension DYHomeViewController {
+    //MARK: 设置导航栏
+    fileprivate func setCustomNavigationBar() {
+        self.navigationController?.navigationBar.isHidden = true
+        let barView = Bundle.main.loadNibNamed("DYHomeNavigationBar", owner: nil, options: nil)?.first as? UIView
+        barView?.frame = CGRect.init(x: 0, y: 0, width: APP_SCREEN_WIDTH, height: 64)
+        self.view.addSubview(barView!)
+    }
+    
+    fileprivate func setupSubView() {
         recommend = DYRecommendTableViewController()
         mobileGame = DYMobileGameTableViewController()
         amuse = DYAmuseTableViewController()
@@ -43,14 +68,9 @@ class DYHomeViewController: UIViewController {
         let container = XEL_Container.init(frame: rect, parentController: self, configuration: configuration)
         
         self.view.addSubview(container!)
-
-        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
-        
+    fileprivate func addPopButton() {
         popBtn = XELPopButton.init(frame: CGRect.init(x: APP_SCREEN_WIDTH - buttonPadding - buttonWidthHeight, y: APP_SCREEN_HEIGHT - buttonPadding - buttonWidthHeight - 64, width: buttonWidthHeight, height: buttonWidthHeight))
         if let popBtn = popBtn {
             popBtn.titlesArray = ["语音开黑", "发布视频", "发布动态", "手游直播", "摄像直播"]
@@ -61,43 +81,12 @@ class DYHomeViewController: UIViewController {
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        popBtn?.removeFromSuperview()
-    }
-    
-    func showMenu(btn: XELPopButton) -> Void {
+    @objc fileprivate func showMenu(btn: XELPopButton) -> Void {
         btn.show { (index) in
-            
+            if index == 4 { // 摄像直播
+                self.navigationController?.pushViewController(DYAnchorViewController(), animated: true)
+            }
         }
-    }
-    
-    //MARK: 设置导航栏
-    func setCustomNavigationBar() {
-        self.navigationController?.navigationBar.isHidden = true
-        let barView = Bundle.main.loadNibNamed("DYHomeNavigationBar", owner: nil, options: nil)?.first as? UIView
-        barView?.frame = CGRect.init(x: 0, y: 0, width: APP_SCREEN_WIDTH, height: 64)
-        navigationController?.view.addSubview(barView!)
     }
 }
 
-
-extension UIBarButtonItem {
-    convenience init(imageName: String, highImageName: String = "", size: CGSize = CGSize.zero, target: AnyObject? = nil, action: Selector) {
-        let btn = UIButton.init(type: .custom)
-        btn.setImage(UIImage.init(named: imageName), for: .normal)
-        if highImageName != "" {
-            btn.setImage(UIImage.init(named: highImageName), for: .highlighted)
-        }
-        
-        if size == CGSize.zero {
-            btn.sizeToFit()
-        } else {
-            btn.frame = CGRect.init(origin: CGPoint.zero, size: size)
-        }
-        
-        btn.addTarget(target, action: action, for: .touchUpInside)
-        
-        self.init(customView: btn)
-    }
-}

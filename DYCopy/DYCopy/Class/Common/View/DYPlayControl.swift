@@ -15,7 +15,19 @@ class DYPlayControl: UIControl {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var fullButton: UIButton!
     @IBOutlet weak var overlayPanel: UIView!
+    @IBOutlet weak var backButton: UIButton!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupSubview()
+    }
     
+}
+
+extension DYPlayControl {
+    fileprivate func setupSubview() {
+        
+    }
 }
 
 extension DYPlayControl {

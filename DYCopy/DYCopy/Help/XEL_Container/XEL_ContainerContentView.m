@@ -15,6 +15,9 @@
 @property (nonatomic, strong) UICollectionView *collectionView;
 //记录历史偏移量
 @property (nonatomic, assign) CGPoint currentOffset;
+
+// 获取controller
+@property (nonatomic, strong, readwrite) UIViewController *controller;
 @end
 
 static NSString *kContentCellID = @"contentCell";
@@ -29,9 +32,20 @@ static NSString *kContentCellID = @"contentCell";
     return self;
 }
 
+//- (void)layoutSubviews {
+//    [super layoutSubviews];
+//    
+//    self.collectionView.frame = self.bounds;
+//}
+
 - (void)setConfiguration:(XEL_Configuration *)configuration {
     _configuration = configuration;
     [self setupUI];
+}
+
+- (UIViewController *)controller {
+    NSInteger index = _currentOffset.x / self.frame.size.width;
+    return self.controllersArray[index];
 }
 
 #pragma mark -
