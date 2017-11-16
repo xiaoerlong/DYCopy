@@ -56,20 +56,19 @@
             <point key="canvasLocation" x="-172" y="-97"/>
         </view>
         <view contentMode="scaleToFill" id="jVf-3t-gW7" customClass="DYPlayControl" customModule="斗鱼TV" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="238"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNl-l3-SgR" customClass="UIControl">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="238"/>
                     <subviews>
-                        <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPA-iq-2mj">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPA-iq-2mj">
                             <rect key="frame" x="10" y="20" width="40" height="40"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="I41-Gi-M3u"/>
                                 <constraint firstAttribute="width" constant="40" id="yLF-cW-Bfy"/>
                             </constraints>
-                            <state key="normal" image="bc_back_icon"/>
+                            <state key="normal" image="btn_round_back"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="20"/>
@@ -79,65 +78,13 @@
                                 <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="7Ki-TA-WkJ"/>
                             </connections>
                         </button>
-                        <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxG-AI-1Gd">
-                            <rect key="frame" x="10" y="120" width="40" height="40"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="40" id="B89-dt-r2n"/>
-                                <constraint firstAttribute="height" constant="40" id="co5-kY-5Ks"/>
-                            </constraints>
-                            <state key="normal" image="bc_back_icon"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                    <real key="value" value="20"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="YyZ-0x-1WS"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rS-hd-y8X">
-                            <rect key="frame" x="10" y="175" width="40" height="40"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="40" id="Uis-OV-yVS"/>
-                                <constraint firstAttribute="width" constant="40" id="g3p-65-bRT"/>
-                            </constraints>
-                            <state key="normal" image="bc_back_icon"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                    <real key="value" value="20"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="Vz3-M1-mfJ"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZf-Lx-OYV">
-                            <rect key="frame" x="359" y="20" width="40" height="40"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="40" id="cwX-7G-jz8"/>
-                                <constraint firstAttribute="width" constant="40" id="uYQ-aH-HlC"/>
-                            </constraints>
-                            <state key="normal" image="bc_back_icon"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                    <real key="value" value="20"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="hoh-FA-lXQ"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edh-8B-mCR">
-                            <rect key="frame" x="366" y="77" width="40" height="40"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edh-8B-mCR">
+                            <rect key="frame" x="359" y="73" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="mS8-U3-qmT"/>
                                 <constraint firstAttribute="height" constant="40" id="tjK-V3-NPO"/>
                             </constraints>
-                            <state key="normal" image="bc_back_icon"/>
+                            <state key="normal" image="Img_player_report"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="20"/>
@@ -147,14 +94,13 @@
                                 <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="0k6-SS-heA"/>
                             </connections>
                         </button>
-                        <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6I-ap-0f6">
-                            <rect key="frame" x="366" y="120" width="40" height="40"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6I-ap-0f6">
+                            <rect key="frame" x="359" y="128" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="6Oh-BN-nBo"/>
                                 <constraint firstAttribute="width" constant="40" id="pMp-aI-Tq3"/>
                             </constraints>
-                            <state key="normal" image="bc_back_icon"/>
+                            <state key="normal" image="btn_v_pause"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="20"/>
@@ -164,14 +110,13 @@
                                 <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="nPd-rp-qsg"/>
                             </connections>
                         </button>
-                        <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhO-9R-1Hy">
-                            <rect key="frame" x="364" y="170" width="40" height="40"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhO-9R-1Hy">
+                            <rect key="frame" x="359" y="183" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="9Pn-Dj-EaC"/>
                                 <constraint firstAttribute="height" constant="40" id="aBr-Hh-Mg8"/>
                             </constraints>
-                            <state key="normal" image="bc_back_icon"/>
+                            <state key="normal" image="btn_vdo_full"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="20"/>
@@ -184,15 +129,13 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="TxG-AI-1Gd" firstAttribute="leading" secondItem="nNl-l3-SgR" secondAttribute="leading" constant="10" id="9I7-j1-KcE"/>
+                        <constraint firstAttribute="trailing" secondItem="q6I-ap-0f6" secondAttribute="trailing" constant="15" id="GQf-ci-6VM"/>
                         <constraint firstAttribute="bottom" secondItem="nhO-9R-1Hy" secondAttribute="bottom" constant="15" id="IAD-eV-CVy"/>
+                        <constraint firstAttribute="trailing" secondItem="Edh-8B-mCR" secondAttribute="trailing" constant="15" id="Iuy-Qg-BoO"/>
                         <constraint firstItem="IPA-iq-2mj" firstAttribute="top" secondItem="nNl-l3-SgR" secondAttribute="top" constant="20" id="NKt-g3-Upd"/>
-                        <constraint firstAttribute="trailing" secondItem="nhO-9R-1Hy" secondAttribute="trailing" constant="10" id="Sz6-nH-0hE"/>
-                        <constraint firstAttribute="bottom" secondItem="8rS-hd-y8X" secondAttribute="bottom" constant="10" id="apj-xI-OKT"/>
-                        <constraint firstItem="8rS-hd-y8X" firstAttribute="top" secondItem="TxG-AI-1Gd" secondAttribute="bottom" constant="15" id="dkL-6R-3Gh"/>
-                        <constraint firstItem="8rS-hd-y8X" firstAttribute="leading" secondItem="nNl-l3-SgR" secondAttribute="leading" constant="10" id="mC0-Nz-Vcr"/>
-                        <constraint firstItem="KZf-Lx-OYV" firstAttribute="top" secondItem="nNl-l3-SgR" secondAttribute="top" constant="20" id="uz4-hf-XXN"/>
-                        <constraint firstAttribute="trailing" secondItem="KZf-Lx-OYV" secondAttribute="trailing" constant="15" id="w7s-XG-kZP"/>
+                        <constraint firstAttribute="trailing" secondItem="nhO-9R-1Hy" secondAttribute="trailing" constant="15" id="Sz6-nH-0hE"/>
+                        <constraint firstItem="nhO-9R-1Hy" firstAttribute="top" secondItem="q6I-ap-0f6" secondAttribute="bottom" constant="15" id="T8e-0b-ley"/>
+                        <constraint firstItem="q6I-ap-0f6" firstAttribute="top" secondItem="Edh-8B-mCR" secondAttribute="bottom" constant="15" id="qze-nl-VyR"/>
                         <constraint firstItem="IPA-iq-2mj" firstAttribute="leading" secondItem="nNl-l3-SgR" secondAttribute="leading" constant="10" id="z9v-JF-3Qr"/>
                     </constraints>
                     <connections>
@@ -213,10 +156,13 @@
                 <outlet property="backButton" destination="IPA-iq-2mj" id="R4H-iC-sLS"/>
                 <outlet property="overlayPanel" destination="nNl-l3-SgR" id="XuX-Fa-rhp"/>
             </connections>
-            <point key="canvasLocation" x="-172" y="450.5"/>
+            <point key="canvasLocation" x="-172" y="457"/>
         </view>
     </objects>
     <resources>
-        <image name="bc_back_icon" width="34" height="34"/>
+        <image name="Img_player_report" width="34" height="34"/>
+        <image name="btn_round_back" width="32" height="32"/>
+        <image name="btn_v_pause" width="36" height="36"/>
+        <image name="btn_vdo_full" width="36" height="36"/>
     </resources>
 </document>
