@@ -21,6 +21,7 @@ class DYPlayViewController: UIViewController {
     var jumpURLString: String?
     var room_id: String?
     fileprivate var player: IJKMediaPlayback?
+    fileprivate var barrageManager: DYBarrageManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,8 @@ class DYPlayViewController: UIViewController {
         setupView()
         setupPlayer()
         getRoomDetial()
+        // 添加弹幕
+        setupBarrageManager()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -81,6 +84,14 @@ class DYPlayViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func onClickBarrage(_ sender: UIButton) {
+        if sender.isSelected {
+            self.barrageManager?.stop()
+        } else {
+            self.barrageManager?.start()
+        }
+        sender.isSelected = !sender.isSelected
+    }
 }
 
 extension DYPlayViewController {
@@ -121,5 +132,22 @@ extension DYPlayViewController {
             self.playView.addSubview(self.mediaControl)
             self.mediaControl.delegatePlayer = self.player
         }
+    }
+    
+    // 添加弹幕
+    fileprivate func setupBarrageManager() {
+        let dataSource = ["666", "主播真会玩", "起小点见", "色情主播，我报警啦"]
+        self.barrageManager = DYBarrageManager.init(dataSource: dataSource)
+        self.barrageManager?.generateViewBlock = { (barrageView) in
+                self.addBarrageView(barrageView)
+        }
+    }
+    
+    private func addBarrageView(_ barrageView: DYBarrageView) {
+        let width = UIScreen.main.bounds.width
+        barrageView.frame = CGRect.init(x: width, y: CGFloat(10 + barrageView.trajectory * 40), width: barrageView.frame.width, height: barrageView.frame.height)
+        self.playView.addSubview(barrageView)
+        
+        barrageView.startAnimation()
     }
 }

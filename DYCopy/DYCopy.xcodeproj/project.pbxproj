@@ -94,6 +94,8 @@
 		3A8099701FBC33290013DA85 /* DYThemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8099681FBC33290013DA85 /* DYThemeTableViewCell.swift */; };
 		3A8099711FBC33290013DA85 /* DYThemeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8099691FBC33290013DA85 /* DYThemeTableViewCell.xib */; };
 		3A8099761FBC348D0013DA85 /* DYPlayControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8099751FBC348D0013DA85 /* DYPlayControl.swift */; };
+		3A84C8631FC2907500BE50DD /* DYBarrageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A84C8621FC2907500BE50DD /* DYBarrageView.swift */; };
+		3A84C8651FC2BD6F00BE50DD /* DYBarrageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A84C8641FC2BD6F00BE50DD /* DYBarrageManager.swift */; };
 		3AB8CE6F1FBD3781001F2455 /* LCLivePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB8CE6E1FBD3781001F2455 /* LCLivePreview.swift */; };
 		3AB8CE711FBD37C5001F2455 /* DYAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB8CE701FBD37C5001F2455 /* DYAnchorViewController.swift */; };
 		822E6BF00A9CDA3ABCC6D1EB /* Pods_DYCopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A3955564AE92E9D3966710 /* Pods_DYCopy.framework */; };
@@ -198,6 +200,8 @@
 		3A8099681FBC33290013DA85 /* DYThemeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYThemeTableViewCell.swift; sourceTree = "<group>"; };
 		3A8099691FBC33290013DA85 /* DYThemeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYThemeTableViewCell.xib; sourceTree = "<group>"; };
 		3A8099751FBC348D0013DA85 /* DYPlayControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYPlayControl.swift; sourceTree = "<group>"; };
+		3A84C8621FC2907500BE50DD /* DYBarrageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBarrageView.swift; sourceTree = "<group>"; };
+		3A84C8641FC2BD6F00BE50DD /* DYBarrageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBarrageManager.swift; sourceTree = "<group>"; };
 		3AB8CE6E1FBD3781001F2455 /* LCLivePreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCLivePreview.swift; sourceTree = "<group>"; };
 		3AB8CE701FBD37C5001F2455 /* DYAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYAnchorViewController.swift; sourceTree = "<group>"; };
 		867BE1F3763E6245DB390AA2 /* Pods-DYCopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYCopy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYCopy/Pods-DYCopy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -596,6 +600,7 @@
 		3A4BEE1D1F39CD9100828B6A /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				3A84C8611FC28F8D00BE50DD /* Barrage(弹幕) */,
 				3A5064C61F46F57400D220D5 /* PopButton */,
 				3A5AF8B11F4533B900C87770 /* IBDesignable和IBInspectable */,
 				3A4BEE1E1F39CD9100828B6A /* XEL_Container */,
@@ -685,6 +690,15 @@
 				3AB8CE6E1FBD3781001F2455 /* LCLivePreview.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3A84C8611FC28F8D00BE50DD /* Barrage(弹幕) */ = {
+			isa = PBXGroup;
+			children = (
+				3A84C8621FC2907500BE50DD /* DYBarrageView.swift */,
+				3A84C8641FC2BD6F00BE50DD /* DYBarrageManager.swift */,
+			);
+			path = "Barrage(弹幕)";
 			sourceTree = "<group>";
 		};
 		3AB8CE6C1FBD3751001F2455 /* Network */ = {
@@ -880,7 +894,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		86C36C8F76CE2121239F4700 /* [CP] Copy Pods Resources */ = {
@@ -930,6 +944,7 @@
 				3A4BEE2F1F39CD9100828B6A /* ButtonWithImageAndTitleExtension.swift in Sources */,
 				3A4BEE491F39CD9100828B6A /* DYHomeNavigationBar.swift in Sources */,
 				3A4BEE541F39CD9100828B6A /* DYLivingViewController.swift in Sources */,
+				3A84C8651FC2BD6F00BE50DD /* DYBarrageManager.swift in Sources */,
 				3A4BEE531F39CD9100828B6A /* DYLiveViewController.swift in Sources */,
 				3A80996C1FBC33290013DA85 /* DYBaseCollectionViewCell.swift in Sources */,
 				3A4BEE431F39CD9100828B6A /* DYCategoryTableViewCell.swift in Sources */,
@@ -948,6 +963,7 @@
 				3A4BEE611F39CD9100828B6A /* DYBaseNavigationController.swift in Sources */,
 				3A4BEE561F39CD9100828B6A /* DYMineTableViewController.swift in Sources */,
 				0C7221351F979DF8006582AD /* DYLivingGameViewController.swift in Sources */,
+				3A84C8631FC2907500BE50DD /* DYBarrageView.swift in Sources */,
 				0C1B4E881F9E383A005FFAFD /* PullDownView.swift in Sources */,
 				3A4BEE3A1F39CD9100828B6A /* DYFunTableViewController.swift in Sources */,
 				3A4BEE3F1F39CD9100828B6A /* DYRecommendTableViewController.swift in Sources */,
@@ -1085,7 +1101,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 867BE1F3763E6245DB390AA2 /* Pods-DYCopy.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1135,7 +1151,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9E64213161EE06F46DCB80E /* Pods-DYCopy.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -91,7 +91,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="0k6-SS-heA"/>
+                                <action selector="onClickBarrage:" destination="-1" eventType="touchUpInside" id="kRl-vg-mtM"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6I-ap-0f6">
@@ -107,7 +107,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="nPd-rp-qsg"/>
+                                <action selector="onClickPlay:" destination="-1" eventType="touchUpInside" id="lD5-ex-Dl3"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhO-9R-1Hy">
@@ -123,7 +123,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="LiZ-pA-3Hm"/>
+                                <action selector="onClickFull:" destination="-1" eventType="touchUpInside" id="j01-uc-fgX"/>
                             </connections>
                         </button>
                     </subviews>

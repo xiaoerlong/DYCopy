@@ -15,8 +15,8 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <IJKMediaFramework/IJKMediaFramework.h>
 
-#import <LFLiveKit/LFLiveKit.h>
-
+//#import <LFLiveKit/LFLiveKit.h>
+#import "LFLiveKit.h"
 
 #endif /* DYCopy_Bridging_Header_h */
 
