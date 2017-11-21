@@ -12,57 +12,54 @@ class DYPlayControl: UIControl {
 
     var delegatePlayer: IJKMediaPlayback?
     
-    @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var fullButton: UIButton!
-    @IBOutlet weak var overlayPanel: UIView!
-    @IBOutlet weak var backButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupSubview()
     }
-    
+
 }
 
-extension DYPlayControl {
-    fileprivate func setupSubview() {
-        
-    }
-}
+
 
 extension DYPlayControl {
-    func playControl() {
-        self.playButton.isSelected = !self.playButton.isSelected
-        if self.playButton.isSelected { // 暂停
+    func playControl(_ btn: UIButton) {
+        btn.isSelected = !btn.isSelected
+        if btn.isSelected { // 暂停
             delegatePlayer?.stop()
         } else { // 播放
             delegatePlayer?.play()
         }
     }
     
+    
+    
     // 全屏
-    func fullControl() {
-        self.fullButton.isSelected = !self.fullButton.isSelected
-        if self.fullButton.isSelected { // 全屏
-            
-        } else { // 半屏
-            
+    func fullControl(_ btn: UIButton) {
+        // 当前屏幕方向
+        let currentOrientation = UIDevice.current.orientation
+        // 目标屏幕方向
+        var orientationTarget: NSNumber = NSNumber.init(value: Int8(currentOrientation.rawValue))
+        if currentOrientation == UIDeviceOrientation.portrait {
+            orientationTarget = NSNumber.init(value: Int8(UIDeviceOrientation.landscapeLeft.rawValue))
+        } else if currentOrientation == UIDeviceOrientation.landscapeLeft {
+            orientationTarget = NSNumber.init(value: Int8(UIDeviceOrientation.portrait.rawValue))
         }
+        UIDevice.current.setValue(orientationTarget, forKey: "orientation")
     }
     
     // 显示或者隐藏
-    func showNoFade() {
-        self.overlayPanel.isHidden = false
+    func showNoFade(_ overlayPanel: UIView) {
+        overlayPanel.isHidden = false
         cancelDelayedHide()
     }
     
-    func showAndFade() {
-        showNoFade()
+    func showAndFade(_ overlayPanel: UIView) {
+        showNoFade(overlayPanel)
         self.perform(#selector(hide), with: nil, afterDelay: 5)
     }
     
-    func hide() {
-        self.overlayPanel.isHidden = true
+    func hide(_ overlayPanel: UIView) {
+        overlayPanel.isHidden = true
         cancelDelayedHide()
     }
     

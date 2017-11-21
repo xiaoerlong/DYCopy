@@ -62,12 +62,12 @@ extension DYBarrageView {
         moveStatusBlock(.start)
         
         // 开始进入到完全进入
-        let speed = wholeWidth / duration
+        let speed = screenWidth / duration
         let enterDuration = self.bounds.width / speed
-        self.perform(#selector(enterScreen), with: nil, afterDelay: TimeInterval(enterDuration))
+        self.perform(#selector(enterScreen), with: nil, afterDelay: TimeInterval(enterDuration + 0.3))
         
         // 移动动画
-        UIView.animate(withDuration: TimeInterval(duration), delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: TimeInterval(duration + enterDuration), delay: 0, options: .curveLinear, animations: {
             self.frame.origin.x -= wholeWidth
         }) { (finished) in
             moveStatusBlock(.end)

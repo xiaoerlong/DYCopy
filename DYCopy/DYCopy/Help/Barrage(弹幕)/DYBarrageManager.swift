@@ -36,6 +36,7 @@ extension DYBarrageManager {
         
         barrageComments.removeAll()
         barrageComments.append(contentsOf: dataSource)
+        barrageViews.removeAll()
         initBarrageComment()
     }
     
@@ -80,7 +81,7 @@ extension DYBarrageManager {
         guard let comment = comment else { return }
         let barrageView = DYBarrageView.init(comment: comment)
         barrageView.trajectory = trajectory
-        barrageViews.append(barrageView)
+//        barrageViews.append(barrageView)
         barrageView.moveStatusBlock = { (status) in
             if self.bStopAnimation {
                 return

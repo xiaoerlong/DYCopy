@@ -18,6 +18,7 @@ class DYPlayViewController: UIViewController {
     @IBOutlet var mediaControl: DYPlayControl!
     
     
+    
     var jumpURLString: String?
     var room_id: String?
     fileprivate var player: IJKMediaPlayback?
@@ -62,26 +63,34 @@ class DYPlayViewController: UIViewController {
     }
     
     
+    
+    
     //MARK: Action
-    @IBAction func onClickMediaControl(_ sender: Any) {
-        mediaControl.showAndFade()
+    @IBAction func onClickMediaControl(_ sender: UIView) {
+        mediaControl.showAndFade(sender)
     }
     
-    @IBAction func onClickOverlay(_ sender: Any) {
-        mediaControl.hide()
+    @IBAction func onClickOverlay(_ sender: UIView) {
+        mediaControl.hide(sender)
     }
     
-    @IBAction func onClickPlay(_ sender: Any) {
-        mediaControl.playControl()
+    @IBAction func onClickPlay(_ sender: UIButton) {
+        mediaControl.playControl(sender)
     }
     
     
-    @IBAction func onClickFull(_ sender: Any) {
-        mediaControl.fullControl()
+    @IBAction func onClickFull(_ sender: UIButton) {
+        mediaControl.fullControl(sender)
     }
     
-    @IBAction func onClickBack(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+    @IBAction func onClickBack(_ sender: UIButton) {
+        let currentOrientation = UIDevice.current.orientation
+        if currentOrientation == UIDeviceOrientation.portrait {
+            self.navigationController?.popViewController(animated: true)
+        } else {
+            
+        }
+        
     }
     
     @IBAction func onClickBarrage(_ sender: UIButton) {
@@ -93,6 +102,8 @@ class DYPlayViewController: UIViewController {
         sender.isSelected = !sender.isSelected
     }
 }
+
+
 
 extension DYPlayViewController {
     // 设置页面
@@ -124,12 +135,11 @@ extension DYPlayViewController {
             player.view.frame = self.playView.bounds
             self.playView.autoresizesSubviews = true
             self.playView.addSubview(player.view)
+            self.playView.insertSubview(player.view, belowSubview: self.mediaControl)
             player.setPauseInBackground(true)
             player.scalingMode = .aspectFill
             player.shouldAutoplay = true
             
-            self.mediaControl.frame = self.playView.bounds
-            self.playView.addSubview(self.mediaControl)
             self.mediaControl.delegatePlayer = self.player
         }
     }
@@ -145,8 +155,9 @@ extension DYPlayViewController {
     
     private func addBarrageView(_ barrageView: DYBarrageView) {
         let width = UIScreen.main.bounds.width
-        barrageView.frame = CGRect.init(x: width, y: CGFloat(10 + barrageView.trajectory * 40), width: barrageView.frame.width, height: barrageView.frame.height)
+        barrageView.frame = CGRect.init(x: width, y: CGFloat(20 + barrageView.trajectory * 40), width: barrageView.frame.width, height: barrageView.frame.height)
         self.playView.addSubview(barrageView)
+        self.playView.insertSubview(barrageView, belowSubview: mediaControl)
         
         barrageView.startAnimation()
     }
