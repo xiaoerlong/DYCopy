@@ -16,6 +16,7 @@ class DYPlayViewController: UIViewController {
     @IBOutlet weak var playView: UIView!
     @IBOutlet weak var birefView: UIView!
     @IBOutlet var mediaControl: DYPlayControl!
+    @IBOutlet weak var overlayPanel: UIControl!
     
     
     
@@ -23,6 +24,8 @@ class DYPlayViewController: UIViewController {
     var room_id: String?
     fileprivate var player: IJKMediaPlayback?
     fileprivate var barrageManager: DYBarrageManager?
+    // 记录当前屏幕是否是全屏
+    fileprivate var isFullScreen: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +57,7 @@ class DYPlayViewController: UIViewController {
         player?.shutdown()
     }
     
+    // 支持横竖屏
     override var shouldAutorotate: Bool {
         return true
     }
@@ -67,11 +71,11 @@ class DYPlayViewController: UIViewController {
     
     //MARK: Action
     @IBAction func onClickMediaControl(_ sender: UIView) {
-        mediaControl.showAndFade(sender)
+        mediaControl.showAndFade(overlayPanel)
     }
     
     @IBAction func onClickOverlay(_ sender: UIView) {
-        mediaControl.hide(sender)
+        mediaControl.hide()
     }
     
     @IBAction func onClickPlay(_ sender: UIButton) {
@@ -80,26 +84,33 @@ class DYPlayViewController: UIViewController {
     
     
     @IBAction func onClickFull(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        let currentOrientation = UIDevice.current.orientation
+        if currentOrientation == UIDeviceOrientation.portrait {
+            isFullScreen = true
+        } else {
+            isFullScreen = false
+        }
         mediaControl.fullControl(sender)
     }
     
     @IBAction func onClickBack(_ sender: UIButton) {
-        let currentOrientation = UIDevice.current.orientation
-        if currentOrientation == UIDeviceOrientation.portrait {
+        if isFullScreen == false {
             self.navigationController?.popViewController(animated: true)
         } else {
-            
+            mediaControl.fullControl(sender)
+            isFullScreen = false
         }
-        
     }
     
     @IBAction func onClickBarrage(_ sender: UIButton) {
+        mediaControl.showAndFade(overlayPanel)
+        sender.isSelected = !sender.isSelected
         if sender.isSelected {
             self.barrageManager?.stop()
         } else {
             self.barrageManager?.start()
         }
-        sender.isSelected = !sender.isSelected
     }
 }
 
@@ -108,12 +119,15 @@ class DYPlayViewController: UIViewController {
 extension DYPlayViewController {
     // 设置页面
     fileprivate func setupView() {
+        self.mediaControl.overlayPanel = self.overlayPanel
         let configuration = XEL_Configuration.init()
         configuration.controllersArray = [UIViewController.init()]
         configuration.titlesArray = ["聊天", "主播", "视频"]
         
         let container = XEL_Container.init(frame: birefView.bounds, parentController: self, configuration: configuration)
         birefView.addSubview(container!)
+        
+        mediaControl.showAndFade(overlayPanel)
     }
     
     // 获取房间信息
@@ -151,6 +165,7 @@ extension DYPlayViewController {
         self.barrageManager?.generateViewBlock = { (barrageView) in
                 self.addBarrageView(barrageView)
         }
+        self.mediaControl.barrageManager = self.barrageManager
     }
     
     private func addBarrageView(_ barrageView: DYBarrageView) {

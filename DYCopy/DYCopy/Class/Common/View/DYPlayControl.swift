@@ -11,7 +11,8 @@ import UIKit
 class DYPlayControl: UIControl {
 
     var delegatePlayer: IJKMediaPlayback?
-    
+    var overlayPanel: UIView?
+    var barrageManager: DYBarrageManager?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +24,9 @@ class DYPlayControl: UIControl {
 
 extension DYPlayControl {
     func playControl(_ btn: UIButton) {
+        if let overlayPanel = overlayPanel {
+            showAndFade(overlayPanel)
+        }
         btn.isSelected = !btn.isSelected
         if btn.isSelected { // 暂停
             delegatePlayer?.stop()
@@ -35,14 +39,18 @@ extension DYPlayControl {
     
     // 全屏
     func fullControl(_ btn: UIButton) {
-        // 当前屏幕方向
-        let currentOrientation = UIDevice.current.orientation
+        if let overlayPanel = overlayPanel {
+            showAndFade(overlayPanel)
+        }
+        
         // 目标屏幕方向
-        var orientationTarget: NSNumber = NSNumber.init(value: Int8(currentOrientation.rawValue))
-        if currentOrientation == UIDeviceOrientation.portrait {
+        var orientationTarget: NSNumber = NSNumber.init(value: Int8(UIDevice.current.orientation.rawValue))
+        if UIDevice.current.orientation.isPortrait {
             orientationTarget = NSNumber.init(value: Int8(UIDeviceOrientation.landscapeLeft.rawValue))
-        } else if currentOrientation == UIDeviceOrientation.landscapeLeft {
+            barrageManager?.start()
+        } else if UIDevice.current.orientation.isLandscape {
             orientationTarget = NSNumber.init(value: Int8(UIDeviceOrientation.portrait.rawValue))
+            barrageManager?.stop()
         }
         UIDevice.current.setValue(orientationTarget, forKey: "orientation")
     }
@@ -55,15 +63,17 @@ extension DYPlayControl {
     
     func showAndFade(_ overlayPanel: UIView) {
         showNoFade(overlayPanel)
+        // 延时5秒执行
         self.perform(#selector(hide), with: nil, afterDelay: 5)
     }
     
-    func hide(_ overlayPanel: UIView) {
-        overlayPanel.isHidden = true
+    func hide() {
+        self.overlayPanel?.isHidden = true
         cancelDelayedHide()
     }
     
     private func cancelDelayedHide() {
+        // 取消已设置的延迟执行
         NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(hide), object: nil)
     }
 }
